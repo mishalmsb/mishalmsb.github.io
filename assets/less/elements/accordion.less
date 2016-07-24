@@ -1,0 +1,36 @@
+/*=== Accordion ===*/
+.accordion{
+	&-title{
+		margin:0;
+		display: block;
+		overflow: hidden;
+		background:@accordion-title-bg;
+		.mix-color(@accordion-title-color);
+		line-height:65px;
+		font-size:@accordion-font-size;
+		cursor:pointer;
+
+		&__icon{
+			margin-right:5px;
+		}
+
+		&__state-icon{
+			float:right;
+			line-height: inherit;
+			font-size:30px;
+			color:@accordion-title__state-icon-color;
+			&.fa:before{
+				content: "\f150";
+			};
+		}
+
+		&.collapsed{
+			border-bottom: 1px solid #E9E9E9;
+
+			.accordion-title__state-icon.fa:before{
+				content: "\f151";
+			}
+		}
+	}
+}
+/*=== end Accordion ===*/

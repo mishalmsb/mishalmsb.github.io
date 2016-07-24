@@ -1,0 +1,37 @@
+@__widget__list-opacity:@sidebar-text-opacity;
+@__widget__list-color: @sidebar-text-color;
+@__widget__list-font:normal normal ~"1.2em/1.6em" @main-font-family;
+/*=== Widget ===*/
+.widget{
+	margin-top:20px;
+
+	&__list{
+		margin:0;
+		padding-left:inherit;
+		list-style:none;
+
+		> li {
+			.mix-opacity(@__widget__list-opacity);
+			.mix-color(@__widget__list-color);
+			.mix-font(@__widget__list-font);
+		}
+	}
+}
+
+@media(max-width:910px){
+	.widget__list{
+		> li{
+			display:inline;
+
+			&:after{
+				content:"/";
+				margin:0 10px;
+			}
+
+			&:last-child:after{
+				display:none;
+			}
+		}
+	}
+}
+/*=== end Widget ===*/

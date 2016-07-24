@@ -1,0 +1,115 @@
+@__share-box__item-margin-bottom:10px;
+/*=== Share Box ===*/
+.share-box {
+	a{
+		border-bottom:none;
+	}
+
+	&__title{
+		margin:0 0 20px 0;
+		.mix-color(@share-box__title-color);
+		.mix-font(@share-box__title-font);
+		text-transform:uppercase;
+	}
+
+	&__items-contaner{
+		overflow: hidden;
+		margin-bottom:-@__share-box__item-margin-bottom;
+	}
+
+	&__item{
+		display:inline-block;
+		margin-right:18px;
+		margin-bottom:@__share-box__item-margin-bottom;
+
+		.count{
+			display:inline-block;
+			margin-top:8px;
+			margin-left:20px;
+			padding:5px 10px;
+			float:right;
+			position:relative;
+			border-radius:15px;
+			background-color:@share-box__item__count-bg;
+			text-decoration:none;
+			.mix-color(@share-box__item__count-color);
+			.mix-font(@share-box__item__count-font);
+
+			&:before{
+				width:0;
+				height:0;
+				position:absolute;
+				left:-12px;
+				top:50%;
+				border:solid transparent;
+				content:" ";
+				pointer-events:none;
+				border-color:transparent;
+				border-right-color:@share-box__item__count-bg;
+				border-width:7px;
+				margin-top:-7px;
+			}
+		}
+
+		.share{
+			display:inline-block;
+			width:50px;
+			height:50px;
+			float:left;
+			position:relative;
+			color:#ffffff;
+			text-decoration:none;
+			-webkit-border-radius:100%;
+			-moz-border-radius:100%;
+			border-radius:100%;
+			font-family:FontAwesome;
+			font-size:22px;
+
+			&:before{
+				display:block;
+				position:absolute;
+				top:10px;
+				left:16px;
+			}
+		}
+
+		&--facebook .share{
+			background-color:#3b5998;
+			&:before{
+				left:18px;
+				content:"\f09a";
+			}
+		}
+
+		&--twitter .share{
+			background-color:#00acee;
+			&:before{
+				content:"\f099";
+			}
+		}
+
+		&--gplus .share{
+			background-color:#dd4b39;
+			&:before{
+				content:"\f0d5";
+			}
+		}
+
+		&--pinterest .share{
+			background-color:#c8232c;
+			&:before{
+				left:15px;
+				content:"\f0d2";
+			}
+		}
+
+		&--linkedin .share{
+			background-color:#0e76a8;
+			&:before{
+				top:8px;
+				content:"\f0e1";
+			}
+		}
+	}
+}
+/*=== end Share Box ===*/

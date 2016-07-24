@@ -1,0 +1,48 @@
+/*=== Article info ===*/
+.blog-post{
+	&__article-info{
+		margin:10px 0 20px 0;
+		padding:0;
+		overflow:hidden;
+		list-style:none;
+
+		li{
+			margin:10px 20px 0 0;
+			float:left;
+			.mix-color(@blog-post__article-info-color);
+			.mix-font(@blog-post__article-info-font);
+	
+			i{
+				margin-right:5px;
+			}
+		}
+
+		a{
+			.mix-color(@blog-post__article-info-color);
+			border-bottom:none;
+			.mix-transition(all 0.3s ease-in-out);
+	
+			&:focus{
+				text-decoration:none;
+			}
+
+			&:hover{
+				text-decoration:none;
+				color:@blog-post__article-info-color-hover !important;
+			}
+		}
+	}
+	
+	&:nth-child(even){
+		.blog-post__article-info{
+			a{
+				.mix-color(@blog-post__article-info--even-color);
+
+				&:hover{
+					.mix-color(@blog-post__article-info--even-color-hover);
+				}
+			}
+		}
+	}
+}
+/*=== end Article info ===*/

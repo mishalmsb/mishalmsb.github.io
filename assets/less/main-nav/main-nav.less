@@ -1,0 +1,186 @@
+@height:@header-height;
+@dividerBorder:@main-nav__item__divider__dark;
+@__mainMenuSliderPadding:10px;
+@__mainMenuBottomMargin:20px;
+@__mainMenuHoverJumpSize:10px;
+@__mainMenuBasicIconPosition:90px;
+/*=== Main nav ===*/
+.main-nav{
+	display:table;
+	table-layout:fixed;
+	margin:0;
+	padding:0;
+	width:100%;
+	height: @height - @__mainMenuBottomMargin;
+	margin-bottom:@__mainMenuBottomMargin;
+	list-style:none;
+
+	&__item-icon-wrapper{
+		display:block;
+		position:relative;
+		width:0;
+		height:@__mainMenuBasicIconPosition + @__mainMenuHoverJumpSize;
+		margin:auto;
+		.mix-transition(all 0.4s ease-in-out);
+		&:before{
+			content:' ';
+			display:block;
+			z-index:3;
+			position:absolute;
+			border-radius:100%;
+			.mix-main-nav-icon-position(30px);
+			.mix-transition(inherit);
+		}
+	}
+
+	&__item{
+		display:table-cell;
+		background:@main-nav__item-bg;
+		text-align:center;
+		height:100%;
+
+		/* borders presentation */
+		border-left:@main-nav__item__divider__dark;
+		&:last-child{
+			border-right:@main-nav__item__divider__light;
+			& .main-nav__item-link{
+				border-right:@main-nav__item__divider__dark;
+			}
+		}
+
+		&:hover, &--active{
+			.main-nav__item-icon-wrapper{
+				height:@__mainMenuBasicIconPosition;
+				&:before{
+					.mix-main-nav-icon-position(76px);
+					background:@main-nav__item__icon__hover-bg;
+				}
+			}
+			.main-nav__item-icon{
+				color:@main-nav__item__icon__hover-color;
+			}
+		}
+
+		&:hover{
+			.main-nav__item-content{
+				color:@main-nav__item__title-hover-color;
+			}
+		}
+
+		&--active, &--active:hover{
+			.main-nav__item-icon-wrapper{
+				&:before{
+					background:@main-nav__curent__item__icon-bg;
+					.mix-transition(~'all 0.4s ease-in-out, background-color 1ms');
+				}
+			}
+
+			.main-nav__item-icon{
+				color:@main-nav__curent__item__icon-color;
+			}
+
+			.main-nav__item-content{
+				color:@main-nav__curent__item__title-color;
+			}
+		}
+	}
+
+	&__item-link{
+		position:relative;
+		display:block;
+		height:100%;
+		border-bottom:none;
+		border-left:@main-nav__item__divider__light;
+	}
+
+	&__item-icon{
+		font-size:@main-nav__item__icon-size;
+		color:@main-nav__item__icon-color;
+		&:before{
+			display:block;
+			position:absolute;
+			z-index:4;
+			.mix-main-nav-icon-position(@main-nav__item__icon-size);
+		}
+	}
+
+	&__item-content{
+		display:block;
+		z-index:3;
+		position:absolute;
+		width:100%;
+		bottom:30px;
+		color:@main-nav__item__title-color;
+		font-family:@main-nav__item__title-family;
+		font-size:@main-nav__item__title-size;
+		font-style:@main-nav__item__title-style;
+		font-weight:@main-nav__item__title-weight;
+		text-transform:@main-nav__item__title-transform;
+		.mix-transition(inherit);
+	}
+
+	&__sliding-element{
+		position:absolute;
+		bottom:0;
+		height:@header-height + @__mainMenuSliderPadding;
+		background:@main-nav__curent__item-bg;
+		z-index:2;
+		display:none;/* should be activated by js */
+	}
+}
+
+.mix-main-nav-icon-position(@__size, @_topDelta:0){
+	bottom: -@__size/2;
+	left: -@__size/2;
+	width:@__size;
+	height:@__size;
+}
+
+.mix-reduce-nav-height(@__height){
+	@__baseSize: 220;
+	@__coeff: @__height / @__baseSize;
+
+	.main-nav{
+		height: @__height - @__mainMenuBottomMargin;
+
+		&__item-icon-wrapper{
+			height:@__coeff * (@__mainMenuBasicIconPosition + @__mainMenuHoverJumpSize);
+		}
+
+		&__item-content{
+			font-size:@__coeff * @main-nav__item__title-size;
+			bottom:50px - (@__baseSize - @__height) * @__coeff;
+		}
+		&__sliding-element{
+			height:@__height + @__mainMenuSliderPadding;
+		}
+
+		&__item-icon{
+			font-size:@__coeff * 38px;
+			&:before{
+				.mix-main-nav-icon-position(@__coeff * 38px);
+			}
+		}
+
+		&__item{
+			&:hover, &--active{
+				.main-nav__item-icon-wrapper{
+					height:@__coeff * @__mainMenuBasicIconPosition;
+					&:before{
+						.mix-main-nav-icon-position(@__coeff * 76px);
+					}
+				}
+			}
+		}
+	}
+	.layout{
+		padding-top:@__height;
+		&-header{
+			height:@__height;
+		}
+		&-sidebar{
+			padding-top:@__height + @header-top;
+		}
+	}
+}
+/*=== end Main nav ===*/

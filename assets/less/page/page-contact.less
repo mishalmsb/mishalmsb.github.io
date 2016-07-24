@@ -1,0 +1,38 @@
+/*=== Contact ===*/
+.google-map{
+	&--contact{
+		height:276px;
+		color: @main-color;
+		a{
+			border-bottom:none;
+		}
+	}
+}
+
+.contact-info{
+	display:inline-block;
+	margin:0 -30px -15px 0;
+	padding:0;
+	list-style:none;
+
+	li{
+		float:left;
+		margin-right:30px;
+		margin-bottom:15px;
+	}
+	i{
+		width:50px;
+		line-height:50px;
+		margin-right:10px;
+		.mix-color(@contact-info-icon-color);
+		font-size:@contact-info-icon-size;
+		background:@contact-info-icon-bg;
+		border-radius:100%;
+		text-align:center;
+	}
+	span{
+		.mix-color(@contact-info-item-color);
+		.mix-font(@contact-info-item-font);
+	}
+}
+/*=== end Contact ===*/

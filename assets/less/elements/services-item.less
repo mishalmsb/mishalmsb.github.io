@@ -1,0 +1,61 @@
+/*=== Services item ===*/
+.service-item{
+	overflow:hidden;
+
+	&:extend(.layout-horizontal-padding);
+
+	&:nth-child(odd){
+		background:@service-item-bg--odd;
+
+		& .service-item__icon-wrap{
+			margin-right:0;
+			margin-left:50px;
+			float:right;
+		}
+	}
+
+	&__icon-wrap{
+		margin-right:50px;
+		float:left;
+	}
+
+	&__icon i{
+		width:140px;
+		height:140px;
+		position:relative;
+		border:@service-item__icon-border;
+		border-radius:100%;
+		font-size:@service-item__icon-size;
+		.mix-color(@service-item__icon-color);
+
+		&:before{
+			display:block;
+			margin-top:-@service-item__icon-size / 2;
+			margin-left:-@service-item__icon-size / 2;
+			position:absolute;
+			top:50%;
+			left:50%;
+		}
+	}
+
+	&__title{
+		margin:-5px 0 15px;
+		.mix-color(@service-item__title-color);
+		.mix-font(@service-item__title-font);
+	}
+
+	&__description{
+		margin:0;
+		.mix-color(@service-item__description-color);
+		.mix-font(@service-item__description-font);
+	}
+}
+
+@media (max-width: 430px){
+	.service-item__icon-wrap, .service-item:nth-child(odd) .service-item__icon-wrap{
+		float:none;
+		text-align:center;
+		margin:0 0 20px 0;
+	}
+}
+/*=== end Services item ===*/

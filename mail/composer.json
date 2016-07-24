@@ -1,0 +1,12 @@
+{
+    "name": "themedelight/savvymail",
+    "authors": [
+        {
+            "name": "Oleg Kutcyna",
+            "email": "themedelight@gmail.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "~5.4"
+    }
+}

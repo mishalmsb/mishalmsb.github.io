@@ -1,0 +1,27 @@
+/*=== Portfolio single ===*/
+.portfolio-single{
+	&__image{
+		max-width:100%;
+	}
+	&__info{
+		&__name{
+			margin-right:15px;
+			display:inline-block;
+			.mix-color(@portfolio-single__info__name-color);
+			.mix-font(@portfolio-single__info__name-font);
+		}
+
+		&__description{
+			margin:0 0 10px;
+			display:inline-block;
+			.mix-color(@portfolio-single__info__description-color);
+			.mix-font(@portfolio-single__info__description-font);
+		}
+
+		&__text{
+			.mix-color(@portfolio-single__info__text-color);
+			.mix-font(@portfolio-single__info__text-font);
+		}
+	}
+}
+/*=== end Portfolio single ===*/

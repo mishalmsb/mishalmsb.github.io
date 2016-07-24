@@ -1,0 +1,56 @@
+/*=== Portfolio ===*/
+.page-portfolio{
+	&__items-container{
+		overflow:hidden;
+	}
+	&__item-wrapper{
+		padding:0;
+		position:relative;
+		overflow: hidden;
+		width:50%;
+		float:left;
+		@media (max-width: 600px){
+			float:none;
+			width:auto;
+		}
+	}
+
+	&__image{
+		max-width:100%;
+	}
+
+	&__item {
+		&__info{
+			width:100%;
+			height:100%;
+			position:absolute;
+			padding:10% @indent-medium 10% @indent-small;
+			display:none;
+			background:@page-portfolio__item__info-bg;
+			pointer-events:none;
+			overflow:hidden;
+
+			.btn-lg{
+				display:none;
+				@media (min-width:375px) and (max-width:600px), (min-width:768px) and (max-width:909px), (min-width: 1133px) {
+					display:inline-block;
+				}
+			}
+		}
+
+		&__title{
+			margin:0;
+			.mix-color(@page-portfolio__item__title-color);
+			.mix-font(@page-portfolio__item__title-font);
+		}
+
+		&__content{
+			margin:3% 0 4%;
+			line-height:1.8em;
+			.mix-color(@page-portfolio__item__content-color);
+			.mix-font(@page-portfolio__item__content-font);
+		}
+
+	}
+}
+/*=== end Portfolio ===*/

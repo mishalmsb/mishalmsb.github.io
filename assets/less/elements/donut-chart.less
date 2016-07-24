@@ -1,0 +1,40 @@
+/*=== Donutchart ===*/
+.donut-chart{
+	margin-bottom:10px;
+	position:relative;
+	color:@main-color;
+
+	&-wrap{
+		margin-right:35px;
+		margin-bottom:35px;
+		width:auto;
+		float:left;
+		text-align:center;
+	}
+
+	&__value{
+		width:100%;
+		position:absolute;
+		text-align:center;
+		.mix-color(@donut-chart__value-color);
+		.mix-font(@donut-chart__value-font);
+		line-height:150px;
+	}
+
+	&__title{
+		margin-bottom:20px;
+		.mix-color(@donut-chart__title-color);
+		.mix-font(@donut-chart__title-font);
+	}
+
+	&__sub-title{
+		.mix-color(@donut-chart__sub-title-color);
+		.mix-font(@donut-chart__sub-title-font);
+	}
+
+	&__pallete-second-color{
+		.mix-color(@progress-bar__bar-bg-color);
+		display:none;
+	}
+}
+/*=== end Donutchart ===*/

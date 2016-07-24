@@ -1,0 +1,51 @@
+/*=== Rating ===*/
+.star-on-png, .star-off-png{
+	display:inline-block;
+	.mix-font(normal normal normal ~"@{rating__start-font-size}/@{rating__start-line-height}" FontAwesome);
+	text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	transform:translate(0, 0);
+}
+
+.star-on-png:before, .star-off-png:before{
+	content:"\f005";
+}
+
+.star-on-png{
+	color:@main-color;
+}
+
+.star-off-png{
+	.mix-color(@rating__value-color);
+}
+
+.rating{
+	overflow:hidden;
+	margin-bottom:10px;
+
+	&__score,
+	&__title,
+	&__value{
+		display:block;
+		margin-bottom:10px;
+		float:left;
+	}
+
+	&__score{
+		margin-right:40px;
+		float:left;
+	}
+
+	&__title{
+		width:110px;
+		.mix-color(@rating__title-color);
+		.mix-font(@rating__title-font);
+	}
+
+	&__value{
+		.mix-color(@rating__value-color);
+		.mix-font(@rating__value-font);
+	}
+}
+/*=== end Rating ===*/

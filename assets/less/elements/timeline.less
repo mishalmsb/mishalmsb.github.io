@@ -1,0 +1,64 @@
+/*=== Timeline ===*/
+.timeline-item{
+	margin:0 -15px;
+	&:extend(.layout-horizontal-padding);
+	overflow: hidden;
+	&__col{
+		float: left;
+		padding:0 15px;
+		&--info{
+			width:33.33333%;
+		}
+		&--description{
+			width:66.66667%;
+		}
+	}
+
+	&__title{
+		margin:0;
+		margin-bottom:20px;
+		.mix-color(@timeline-item__title-color);
+		.mix-font(@timeline-item__title-font);
+		.mix-title-decorator(bottom);
+	}
+
+	&__period{
+		margin-bottom:15px;
+		.mix-color(@timeline-item__period-color);
+		.mix-font(@timeline-item__period-font);
+	}
+
+	&__place{
+		margin:0;
+		margin-bottom:10px;
+		.mix-color(@timeline-item__place-color);
+		.mix-font(@timeline-item__place-font);
+	}
+
+	&__location{
+		margin:0;
+		margin-bottom:10px;
+		.mix-color(@timeline-item__location-color);
+		.mix-font(@timeline-item__location-font);
+	}
+
+	&__description{
+		.mix-color(@timeline-item__description-color);
+		.mix-font(@timeline-item__description-font);
+		line-height:1.8em;
+	}
+}
+
+@media(max-width: 607px){
+	.timeline-item{
+		&__col{
+			float:none;
+			width:100%;
+		}
+
+		&__title{
+			margin:30px 0 10px 0;
+		}
+	}
+}
+/*=== end Timeline ===*/

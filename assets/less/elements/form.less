@@ -1,0 +1,49 @@
+/*=== Form ===*/
+.form{
+	&__item{
+		width:100%;
+		margin-bottom:25px;
+
+		&__failed-wrap{
+			display:none;
+			margin:-20px 0 15px 22px;
+			color:#ff6868;
+			font-size:14px;
+			font-style:italic;
+		}
+
+		&--invalid{
+			.form__item{
+				border:2px solid #f29090;
+			}
+			.form__item__failed-wrap{
+				display:block;
+			}
+		}
+	}
+
+	&__textarea{
+		min-height:215px;
+		margin-bottom:20px;
+		resize:none;
+	}
+
+	&__status{
+		display:none;
+		width:60%;
+		margin-top:10px;
+		float:right;
+		text-align:right;
+		font-size:16px;
+		font-weight:400;
+		&--success{
+			display:block;
+			color:#41c266;
+		}
+		&--error{
+			display:block;
+			color:#ff6868;
+		}
+	}
+}
+/*=== end Form ===*/

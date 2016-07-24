@@ -1,0 +1,29 @@
+/*=== About Author ===*/
+.about-author{
+	overflow:hidden;
+	background:@about-author__content-bg;
+	&:extend(.layout-horizontal-padding);
+
+	&__title{
+		margin:0 0 25px 0;
+		.mix-color(@about-author__title-color);
+		.mix-font(@about-author__title-font);
+		text-transform:uppercase;
+	}
+
+	&__image-wrap{
+		width:25%;
+		margin-right:20px;
+		float:left;
+
+		img{
+			max-width:100%;
+			border-radius:100%;
+		}
+	}
+
+	&__content{
+		font-size:0.889em;
+	}
+}
+/*=== end About Author ===*/

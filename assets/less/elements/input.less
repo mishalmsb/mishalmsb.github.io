@@ -1,0 +1,53 @@
+/*=== Input ===*/
+.mix-placeholder(@color: @placeholder-color, @font:@placeholder-font, @text-transform: @placeholder-transform) {
+	&::-webkit-input-placeholder{
+		.mix-color(@color);
+		.mix-font(@font);
+		text-transform:@text-transform;
+		vertical-align:middle;
+		padding-top:2px;
+	}
+
+	&::-moz-placeholder{
+		.mix-color(@color);
+		.mix-font(@font);
+		text-transform:@text-transform;
+		vertical-align:middle;
+		padding-top:2px;
+	}
+
+	&:-ms-input-placeholder{
+		.mix-color(@color);
+		.mix-font(@font);
+		text-transform:@text-transform;
+		vertical-align:middle;
+		padding-top:2px;
+	}
+}
+
+input:focus,
+textarea:focus{
+	outline:none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+	height:50px;
+	padding-left:20px;
+	padding-right:20px;
+	border:2px solid @form__item-border-color;
+	border-radius:25px;
+	-webkit-appearance:none;
+}
+
+textarea{
+	margin-bottom:20px;
+	padding:10px 20px;
+	border:2px solid @form__item-border-color;
+	border-radius:25px;
+	-webkit-appearance:none;
+}
+
+.mix-placeholder();
+/*=== end Input ===*/

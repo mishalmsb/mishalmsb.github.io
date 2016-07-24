@@ -1,0 +1,34 @@
+/*=== 404 ===*/
+.page-404,
+.layout-body--404 .layout{
+	background:@main-color2;
+}
+
+.page-404{
+	.mix-color(@page-404-text-color);
+
+	&__content{
+		text-align:center;
+	}
+
+	&__title{
+		margin:0;
+		.mix-font(@page-404__title-font);
+	}
+
+	&__description{
+		.mix-font(@page-404__content-font);
+	}
+
+	&__link{
+		.mix-color(@page-404-text-color);
+		.mix-font(@page-404__content-font);
+		border-bottom:2px solid @page-404-text-color;
+
+		&:hover{
+			.mix-color(@page-404-text-color);
+			border-bottom:none;
+		}
+	}
+}
+/*=== end 404 ===*/

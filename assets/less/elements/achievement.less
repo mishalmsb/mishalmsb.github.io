@@ -1,0 +1,99 @@
+/*=== Achievement ===*/
+.achievement{
+	&-item{
+		display:table;
+
+		&__titles{
+			display:table-cell;
+			padding-left:15px;
+			vertical-align:middle;
+		}
+
+		&__title{
+			margin:0;
+			margin-bottom:5px;
+			.mix-color(@achievement-item__title-color);
+			.mix-font(@achievement-item__title-font);
+			line-height:35px;
+		}
+
+		&__sub-title{
+			margin:0;
+			.mix-color(@achievement-item__sub-title-color);
+			.mix-font(@achievement-item__sub-title-font);
+		}
+
+		&__icon{
+			display:table-cell;
+			width:135px;
+			vertical-align:middle;
+
+			i{
+				width:115px;
+				height:115px;
+				position:relative;
+				.mix-color(@achievement-item__icon-color);
+				font-size:@achievement-item__icon-size;
+				border-width:@achievement-item__icon-size-border-width;
+				border-style:@achievement-item__icon-size-border-style;
+				border-color:@achievement-item__icon-size-border-color;
+				border-radius:100%;
+
+				&:before{
+					display:block;
+					margin-top:-@achievement-item__icon-size / 2;
+					margin-left:-@achievement-item__icon-size / 2;
+					position:absolute;
+					top:50%;
+					left:50%;
+				}
+			}
+		}
+	}
+
+	&-grid{
+		overflow: hidden;
+
+		&__screen{
+			overflow: hidden;
+			margin:-1px;
+			border:1px solid blue;
+		}
+		&__cell{
+			width:50%;
+			float:left;
+			border-right:1px solid @achievement-grid-border-color;
+			border-bottom:1px solid @achievement-grid-border-color;
+		}
+	}
+}
+
+// @used in layout/layout.less
+.mix-achivement-grid-cell-spaces(@_celSpace, @_innerSpace){
+	.achievement-grid{
+		&:before{
+			content:' ';
+			display: block;
+			margin-top:-2-@_celSpace;
+		}
+		&:after{
+			content:' ';
+			display: block;
+			margin-bottom:-2-@_celSpace;
+		}
+		margin: 0 -2-@_celSpace 0 -2-@_celSpace+(@_celSpace - @_innerSpace);
+		padding-top:@_celSpace;
+		padding-bottom:@_celSpace;
+		&__cell{
+			padding:@_innerSpace;
+		}
+	}
+}
+
+@media (min-width: 912px) and (max-width:1132px), (max-width: 762px){
+	.achievement-grid__cell{
+		float: none;
+		width: 100%;
+	}
+}
+/*=== end Achievement ===*/

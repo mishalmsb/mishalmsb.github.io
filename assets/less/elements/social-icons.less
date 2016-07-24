@@ -1,0 +1,30 @@
+/*=== Social icons ===*/
+.social-icons{
+	margin:0;
+	padding:0;
+	margin-top:30px;
+	list-style:none;
+
+	& li{
+		display:inline-block;
+		margin-right:18px;
+	}
+
+	& a{
+		.mix-opacity(@social-icons__item-opacity);
+		.mix-color(@social-icons__item-color);
+		font-size:@social-icons__item-size;
+		position:relative;
+		bottom:0;
+		border-bottom:none;
+		.mix-transition(all 0.2s ease-in-out);
+
+		&:hover{
+			.mix-opacity(0.95);
+			color:#fff;
+			bottom:5px;
+			.mix-transition(all 0.3s ease-in-out);
+		}
+	}
+}
+/*=== end Social icons ===*/

@@ -1,0 +1,59 @@
+/*=== Comments ===*/
+.comments{
+	&__title{
+		margin:0 0 15px 0;
+		.mix-color(@comments__title-color);
+		.mix-font(@comments__title-font);
+		text-transform:uppercase;
+	}
+
+	&__reply{
+		margin-left:60px;
+	}
+
+	&__pagination{
+		margin-top:40px;
+		text-align:center;
+
+		&__list{
+			padding:0;
+			margin:0;
+			overflow:hidden;
+			list-style:none;
+
+			& > li {
+				display:inline-block;
+				margin-right:5px;
+			}
+		}
+
+		a{
+			display:inline-block;
+			width:45px;
+			border:@comments__navigation__item-border;
+			border-radius:100%;
+			.mix-color(@comments__navigation__item-color);
+			.mix-font(@comments__navigation__item-font);
+			.mix-transition(all 0.3s ease-in-out);
+			line-height:41px;
+
+			&:hover{
+				border-color:@comments__navigation__item-hover-border-color;
+				background:@comments__navigation__item-hover-bg;
+				color:#fff;
+			}
+		}
+
+		&__list__item-current{
+			background:@comments__navigation__item-bg;
+			color:#fff !important;
+
+			&:hover{
+				border-color:@comments__navigation__item-bg !important; 
+				background:@comments__navigation__item-bg !important;
+				cursor:default;
+			}
+		}
+	}
+}
+/*=== end Comments ===*/

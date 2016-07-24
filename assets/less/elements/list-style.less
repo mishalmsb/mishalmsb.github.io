@@ -1,0 +1,25 @@
+/*=== List style ===*/
+.list-style--check{
+	margin:0;
+	padding:0;
+	list-style:none;
+
+	li{
+		margin-bottom:5px;
+		.mix-color(@list-style__item--check-color);
+		.mix-font(@list-style__item--check-font);
+
+		&:before{
+			display:inline-block;
+			margin-right:10px;
+			color:@main-color;
+			font:normal normal normal 1.222em/1em FontAwesome;
+			text-rendering:auto;
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+			transform:translate(0, 0);
+			content:"\f058";
+		}
+	}
+}
+/*=== end List style ===*/

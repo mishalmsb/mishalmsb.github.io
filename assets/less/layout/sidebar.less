@@ -1,0 +1,26 @@
+/*=== Sidebar ===*/
+.sidebar{
+	height:100%;
+	background:@sidebar-bg;
+	.mix-color(@sidebar-text-color);
+	&:extend(.sidebar-container);
+
+	& when (@layout-title-height > 0) {
+		padding-top: @layout-title-height;
+	}
+
+	&__site-name{
+		margin:0;
+		padding:0;
+		.mix-opacity(@sidebar__site-name-opacity);
+		.mix-font(@sidebar__site-name-font);
+		text-transform:uppercase;
+	}
+}
+
+@media(max-width:910px){
+	.sidebar{
+		text-align:center;
+	}
+}
+/*=== end Sidebar ===*/

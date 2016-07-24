@@ -1,0 +1,45 @@
+/*=== Comment item ===*/
+.comment-item{
+	margin-top:30px;
+
+	&__info{
+		overflow:hidden;
+		padding-top:17px;
+
+		&__image-wrap{
+			margin:-17px 20px 0 0;
+			float:left;
+
+			& img{
+				border-radius:100%;
+			}
+		}
+
+		&__name{
+			float:left;
+			margin:8px 30px 7px 0;
+			.mix-color(@comment-item__info__name-color);
+			.mix-font(@comment-item__info__name-font);
+		}
+
+		&__date{
+			float:left;
+			margin:8px 20px 7px 0;
+			.mix-color(@comment-item__info__date-color);
+			.mix-font(@comment-item__info__date-font);
+		}
+
+		&__reply{
+			margin-top:2px;
+			float:right;
+		}
+	}
+
+	&__content{
+		margin-top:15px;
+		padding:30px;
+		border:@comment-item__content-border;
+		font-size:0.889em;
+	}
+}
+/*=== end Comment item ===*/
