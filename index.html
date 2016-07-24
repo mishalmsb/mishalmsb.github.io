@@ -4,10 +4,14 @@
   <title></title>
 
   <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>  
-  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+  <script src="js/app.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/menu_style.css">
+  <link rel="stylesheet" type="text/css" href="css/home_style.css">
+  <link rel="stylesheet" type="text/css" href="css/contact_style.css">
 </head>
 <body>
 
@@ -17,7 +21,7 @@
       <div class="row"></div>
     </div>
  -->
-    <div class="container">
+
       <div class="row">
         <div class="board">
           <div class="board-inner">
@@ -26,29 +30,29 @@
 
               <!-- ================= MENU =================== -->
 
-              <li class="active"> <a href="#home" data-toggle="tab">
+              <li class="active"> <a href="#contact" data-toggle="tab">
                   <span class="round-tabs all">
                     <i class="glyphicon glyphicon-home"></i>
                   </span> </a>
               </li>
-              <li><a href="#doner" data-toggle="tab">
+              <li><a href="#home" data-toggle="tab">
                 <span class="round-tabs all">
                   <i class="glyphicon glyphicon-ok"></i>
                 </span> </a>
               </li>
-              <li><a href="#doner" data-toggle="tab">
+              <li><a href="#test" data-toggle="tab">
                 <span class="round-tabs all">
-                  <i class="glyphicon glyphicon-ok"></i>
+                  <i class="fa fa-briefcase" aria-hidden="true"></i>
                 </span> </a>
               </li>
-              <li><a href="#doner" data-toggle="tab">
+              <li><a href="#test" data-toggle="tab">
                 <span class="round-tabs all">
-                  <i class="glyphicon glyphicon-ok"></i>
+                  <i class="glyphicon glyphicon-education"></i>
                 </span> </a>
               </li>
-              <li><a href="#doner" data-toggle="tab">
+              <li><a href="#test" data-toggle="tab">
                 <span class="round-tabs all">
-                  <i class="glyphicon glyphicon-ok"></i>
+                  <i class="fa fa-user" aria-hidden="true"></i>
                 </span> </a>
               </li>
 
@@ -57,28 +61,29 @@
 
           <!-- ================= CONTENTS =================== -->
             <div class="tab-content">
-              <div class="tab-pane fade in active" id="home">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 display">
-                      sd
-                    </div>
-                </div>
+              <div class="tab-pane fade in active" id="contact">
+
               </div>
-              <div class="tab-pane fade" id="doner">
-                
+
+              <div class="tab-pane fade" id="test">
+
+              </div>
+
+              <div class="tab-pane fade" id="home">
+
               </div>
 
               <div class="clearfix"></div>
             </div>
+
           </div>
         </div>
-    </div>
-
+   
 <!--     <div class="container">
       <div class="row"></div>
     </div>
  -->
-
+ <div id="includedContent"></div>
 
   <footer>
 
