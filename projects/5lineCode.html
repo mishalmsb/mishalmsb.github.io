@@ -1,0 +1,17 @@
+
+
+
+
+
+
+<iframe id="player" src="https://player.vimeo.com/video/64097444?rel=0&autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="display: block; margin: 0 auto; margin-top: 10vh;"></iframe>
+
+<script>
+
+  setInterval(function(){ 
+      document.body.style.backgroundColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+      document.getElementById("player").style.border = "100px dotted "+'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+
+   }, 500);
+
+</script>
