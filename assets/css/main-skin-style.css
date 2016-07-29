@@ -96,7 +96,7 @@ a:focus {
   padding: 0;
   opacity: 0.55;
   filter: alpha(opacity=55);
-  font: normal normal 2.125em/1.33em Novecento_wide_bold;
+  font: normal normal 1.9em/1.33em Novecento_wide_bold;
   text-transform: uppercase;
 }
 @media (max-width: 910px) {
@@ -357,7 +357,7 @@ body {
   width: 60px;
   height: 60px;
   float: right;
-  background-color: #ffa640;
+  background-color: #1D406E;
   transition: all 500ms ease-in;
   position: relative;
   z-index: 21;
