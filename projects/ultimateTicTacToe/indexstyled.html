@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="UlticUltacUltoe">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultic Ultac Ultoe</title>
+    <!-- Plugins and libraries -->
+    <script type="text/javascript" src="./node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-material/angular-material.min.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-aria/angular-aria.min.js"></script>
+
+    <!-- Internal JS -->
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/controllers/game1Controller.js"></script>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./node_modules/angular-material/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="./bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+  </head>
+  <body ng-controller="TicTacToeController as game">
+    <header>
+      <h1>Ultic Ultac Ultoe</h1>
+      <h3 ng-model="game.gameWinner"> Turn: {{game.currentPlayer}} </h3>
+      <h3 ng-model="game.gameWinner"> {{game.winnerMsg}} </h3>
+    </header>
+    <main flex="40">
+      <div class="super-board">
+        <div class="board-frame" ng-class="{}">
+          <div class="inner-board" >
+            <button class="cell" ng-repeat="position in game.games[0] track by $index"
+             ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 0)"
+             ng-disabled="game.desableBt($index, 0)" >
+             {{ game.games[0][$index] }}
+            </button>
+          </div>
+          <div class="inner-board">
+            <button class="cell" ng-repeat="position in game.games[1] track by $index"
+             ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 1)"
+             ng-disabled="game.desableBt($index, 1)" >
+             {{ game.games[1][$index] }}
+            </button>
+          </div>          
+          <div class="inner-board">
+            <button class="cell" ng-repeat="position in game.games[2] track by $index"
+             ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 2)"
+             ng-disabled="game.desableBt($index, 2)" >
+             {{ game.games[2][$index] }}
+            </button>
+          </div>
+          <div class="inner-board">
+            <button class="cell" ng-repeat="position in game.games[3] track by $index"
+             ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 3)"
+             ng-disabled="game.desableBt($index, 3)" >
+             {{ game.games[3][$index] }}
+            </button>
+          </div>
+          <div class="inner-board">
+            <button class="cell" ng-repeat="position in game.games[4] track by $index"
+             ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 4)"
+             ng-disabled="game.desableBt($index, 4)" >
+             {{ game.games[4][$index] }}
+            </button>
+          </div>
+          <div class="inner-board">
+           <button class="cell" ng-repeat="position in game.games[5] track by $index"
+            ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 5)"
+            ng-disabled="game.desableBt($index, 5)" >
+            {{ game.games[5][$index] }}
+           </button>
+          </div>
+          <div class="inner-board">
+            <button class="cell" ng-repeat="position in game.games[6] track by $index"
+             ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 6)"
+             ng-disabled="game.desableBt($index, 6)" >
+             {{ game.games[6][$index] }}
+            </button>
+          </div>
+          <div class="inner-board">
+            <button class="cell" ng-repeat="position in game.games[7] track by $index"
+             ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 7)"
+             ng-disabled="game.desableBt($index, 7)" >
+             {{ game.games[7][$index] }}
+            </button>
+          </div>
+          <div class="inner-board">
+            <button class="cell" ng-repeat="position in game.games[8] track by $index"
+             ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 8)"
+             ng-disabled="game.desableBt($index, 8)" >
+             {{ game.games[8][$index] }}
+            </button>
+          </div>
+        </div>
+        <object type="image/svg+xml" data="./resources/boardlines.svg"></object>
+      </div>
+    </main>
+  </body>
+</html>

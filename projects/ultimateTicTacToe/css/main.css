@@ -1,0 +1,27 @@
+main {
+  margin: 0 auto;
+}
+.super-board{
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+  width: 700px;
+  height: 1000px;
+  text-align: center;
+  
+}
+.inner-board {
+  margin-left: 25px;
+  float: left;
+  /*border: 1px solid black;*/
+  width: 200px;
+  padding: 20px;
+
+}
+.cell{
+  /*border: 1px solid black;*/
+  height: 50px;
+  width: 50px;
+}
+button {
+  vertical-align: top;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ultic-ultac-ultoe",
+  "version": "1.0.0",
+  "description": "GA Hackathon Project - Ultimate Tic Tac Toe",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatHadley/ultimate-tictactoe.git"
+  },
+  "author": "Pat Hadley, Mishal Shashikant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatHadley/ultimate-tictactoe/issues"
+  },
+  "homepage": "https://github.com/PatHadley/ultimate-tictactoe#readme",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-aria": "^1.5.7",
+    "angular-material": "^1.1.0-rc.5"
+  }
+}

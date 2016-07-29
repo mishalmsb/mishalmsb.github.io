@@ -1,0 +1,21 @@
+{
+  "name": "ultic-ultac-ultoe",
+  "description": "GA Hackathon Project - Ultimate Tic Tac Toe",
+  "main": "app.js",
+  "authors": [
+    "Pat Hadley",
+    "Mishal Shashikant"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/PatHadley/ultimate-tictactoe",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
+}

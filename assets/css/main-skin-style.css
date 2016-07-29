@@ -1,4 +1,5 @@
 @import url('http://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900');
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 /*=== Fonts ===*/
 @font-face {
   font-family: 'Novecento_wide_bold';
@@ -23,16 +24,18 @@ body {
     font-size: 16px;
   }
 }
+
 a {
-  color: #a28fb2;
+  color: #0C2D57;
   border-bottom: 1px dotted #a28fb2;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 a:hover {
-  color: #c5add9;
-  border-bottom-color: #c5add9;
+  color: #469686;
+  border-bottom-color: #469686;
   text-decoration: none;
 }
 a,
@@ -83,8 +86,8 @@ a:focus {
 /*=== Sidebar ===*/
 .sidebar {
   height: 100%;
-  background: #100642;
-  color: #938ea9;
+  background: #0C2D57;
+  color: #4E7199;
   padding-top: 75px;
   font: normal normal 1.125em/1.33em Novecento_wide_bold;
 }
@@ -123,7 +126,7 @@ body {
   z-index: 3;
   height: 220px;
   top: 20px;
-  background-color: #100642;
+  background-color: #0C2D57;
 }
 .layout-sidebar {
   position: fixed;
@@ -146,7 +149,7 @@ body {
   margin: 0;
   z-index: 1;
   overflow: hidden;
-  background: #ffa640;
+  background: #1D406E;
   color: #ffffff;
   font: normal normal 1.778em Novecento_wide_bold;
   text-transform: uppercase;
@@ -236,7 +239,7 @@ body {
   left: -38px;
   width: 76px;
   height: 76px;
-  background: #b9b0bf;
+  background: #4E7199;
 }
 .main-nav__item:hover .main-nav__item-icon,
 .main-nav__item--active .main-nav__item-icon {
@@ -247,14 +250,14 @@ body {
 }
 .main-nav__item--active .main-nav__item-icon-wrapper:before,
 .main-nav__item--active:hover .main-nav__item-icon-wrapper:before {
-  background: #928a99;
+  background: #0C2D57;
   -webkit-transition: all 0.4s ease-in-out, background-color 1ms;
   -o-transition: all 0.4s ease-in-out, background-color 1ms;
   transition: all 0.4s ease-in-out, background-color 1ms;
 }
 .main-nav__item--active .main-nav__item-icon,
 .main-nav__item--active:hover .main-nav__item-icon {
-  color: #ffa640;
+  color: white;
 }
 .main-nav__item--active .main-nav__item-content,
 .main-nav__item--active:hover .main-nav__item-content {
@@ -269,7 +272,7 @@ body {
 }
 .main-nav__item-icon {
   font-size: 38px;
-  color: #cdc9d1;
+  color: #4E7199;
 }
 .main-nav__item-icon:before {
   display: block;
@@ -403,7 +406,7 @@ body {
   display: block;
   overflow: hidden;
   background: #f6f5f7;
-  color: #b6afba;
+  color: #4E7199;
   line-height: 65px;
   font-size: 20px;
   cursor: pointer;
@@ -697,7 +700,7 @@ textarea {
 .list-style--check li:before {
   display: inline-block;
   margin-right: 10px;
-  color: #ffa640;
+  color: #4E7199;
   font: normal normal normal 1.222em/1em FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -1134,7 +1137,7 @@ textarea {
   width: 35px;
   height: 0;
   margin-top: 15px;
-  border-bottom: 5px solid #ffa640;
+  border-bottom: 5px solid #0C2D57;
   border-radius: 3px;
 }
 .timeline-item__period {
@@ -1229,7 +1232,14 @@ textarea {
 /*=== Home ===*/
 .page-home,
 .layout-body--home .layout {
-  background: #ffa640;
+  /* background: #ffa640;*/
+  /*background: #d68442;*/
+  /*background: #18783F;*/
+  /*background: #A7A722;*/
+  background: #1D406E;
+  /*background: #156A5C;*/
+  
+    
 }
 @media (min-width: 910px) {
   .layout-body--home .mCSB_scrollTools_vertical {
@@ -1249,9 +1259,12 @@ textarea {
   }
 }
 .page-home__text p {
-  margin-top: 15px;
+  
   margin-bottom: 0;
-  color: #2f2f2f;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 .page-home__page-title {
   margin: 0;
@@ -1264,9 +1277,20 @@ textarea {
   margin-top: 49px;
 }
 .page-home__thumbnail {
-  max-width: 100% !important;
+  max-width: 84% !important;
   max-height: 100% !important;
-  border: 9px solid #ffffff;
+  transition: all 0.6s ease-in-out;
+  /*content:url("../../uploads/home/me.png");*/
+
+  /*border: 9px solid #0C2D57;*/
+}
+.page-home__thumbnail:hover {
+  max-width: 88% !important;
+  max-height: 100% !important;
+  transition: all 0.3s ease-in-out;
+  /*content:url("../../uploads/home/meFunny.png");*/
+
+  /*border: 9px solid #0C2D57;*/
 }
 /*=== end Home ===*/
 /*=== Portfolio ===*/
