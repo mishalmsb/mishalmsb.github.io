@@ -7,3 +7,10 @@
 100642
 
 00004D*/
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+.typewriter p {
+  color: black;
+  background-color: red;
+}

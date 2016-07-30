@@ -1,5 +1,7 @@
 @import url('http://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900');
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
 /*=== Fonts ===*/
 @font-face {
   font-family: 'Novecento_wide_bold';
@@ -1262,7 +1264,8 @@ textarea {
   
   margin-bottom: 0;
   color: white;
-  font-family: "Roboto", sans-serif;
+  /*font-family: "Roboto", sans-serif;*/
+  font-family: 'Slabo 27px', serif;
   text-transform: uppercase;
   font-size: 20px;
 }
