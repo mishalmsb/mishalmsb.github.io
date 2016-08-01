@@ -1,0 +1,62 @@
+body {
+  font-family: 'Handlee', cursive;
+  background-color: #ddd;
+}
+
+header {
+  font-size: 2em;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  height: 80vh;
+  width: 40%;
+}
+
+.super-board {
+  position: relative;
+}
+
+.board-frame {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  left: 30px;
+}
+
+.inner-board {
+  width: 30%;
+  display: inline-block;
+  margin-bottom: 2.6em;
+}
+
+.board-frame .inner-board .cell{
+  display: inline-block;
+  width: 26%;
+  height: 33px;
+  text-align: center;
+  font-size: 33px;
+  margin: 9px 4px;
+  font-family: 'Handlee', cursive;
+  color: #111;
+  padding: 0;
+  vertical-align: top;
+  border:none;
+  background: none;
+  border-radius: 25%;
+}
+
+button:focus {outline:0;}
+
+.board-frame .inner-board .cell:hover{
+  background: rgba(255,255,255,0.95);
+  -webkit-box-shadow: 0px 0px 39px 21px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 39px 21px rgba(255,255,255,1);
+  box-shadow: 0px 0px 39px 21px rgba(255,255,255,1);
+}
+
+object {
+  z-index: -5;
+}
+

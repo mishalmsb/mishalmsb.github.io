@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="UlticUltacUltoe">
-  <head>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultic Ultac Ultoe</title>
@@ -13,7 +13,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-animate.min.js"></script>
     <!-- <script type="text/javascript" src="./node_modules/angular-aria/angular-aria.min.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-aria.min.js"></script>
-    <
+    
     <!-- Internal JS -->
     <script type="text/javascript" src="./js/app.js"></script>
     <script type="text/javascript" src="./js/controllers/game1Controller.js"></script>
@@ -30,7 +30,8 @@
    <!--  <link rel="stylesheet" type="text/css" href="./bower_components/animate.css/animate.min.css"> -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-  </head>
+  
+ 
   <body ng-controller="TicTacToeController as game">
     <main >
       <div class="super-board">
@@ -40,7 +41,7 @@
             <h3 ng-model="game.gameWinner"> {{game.winnerMsg}} </h3>
         </div>
         <div class="board-frame" ng-class="{}">
-          <div class="inner-board" >
+          <div class="inner-board" ng-class="class">
             <button class="cell" ng-repeat="position in game.games[0] track by $index"
              ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 0)"
              ng-disabled="game.desableBt($index, 0)" >

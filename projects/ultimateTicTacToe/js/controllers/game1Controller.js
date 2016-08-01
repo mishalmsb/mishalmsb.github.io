@@ -35,6 +35,7 @@ function TicTacToeController(){
 
      this.btClicked = function(position , board) {
 
+        this.class = "blue";
        if (this.currentBoard === board || this.currentBoard === "") {
          this.games[board][position] = this.currentPlayer;
          this.currentPlayer = this.currentPlayer == 'X' ? 'O' : 'X';

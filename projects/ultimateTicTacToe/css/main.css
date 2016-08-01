@@ -1,6 +1,33 @@
-main {
-  margin: 0 auto;
+body {
+  font-family: 'Handlee', cursive;
+/*  background-color: #ddd;*/
 }
+
+.nextMoveDiv{
+    background-color: blue;
+}
+
+.allDiv{
+    background-color: blue;
+}
+
+button {
+  vertical-align: top;
+}
+
+button:focus {outline:0;}
+
+.board-frame .inner-board .cell:hover{
+  background: rgba(255,255,255,0.95);
+  -webkit-box-shadow: 0px 0px 39px 21px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 39px 21px rgba(255,255,255,1);
+  box-shadow: 0px 0px 39px 21px rgba(255,255,255,1);
+}
+
+object {
+  z-index: -5;
+}
+
 .super-board{
   /*border: 1px solid black;*/
   margin: 0 auto;
@@ -12,9 +39,10 @@ main {
 .inner-board {
   margin-left: 25px;
   float: left;
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   width: 200px;
   padding: 20px;
+
 
 }
 .cell{
@@ -22,6 +50,4 @@ main {
   height: 50px;
   width: 50px;
 }
-button {
-  vertical-align: top;
-}
+
