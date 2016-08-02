@@ -3,14 +3,12 @@ body {
 /*  background-color: #ddd;*/
 }
 
-.nextMoveDiv{
-    background-color: blue;
+.next {
+    background-color: red;
 }
-
-.allDiv{
-    background-color: blue;
+.all {
+    background-color: green;
 }
-
 button {
   vertical-align: top;
 }

@@ -89,7 +89,7 @@ a:focus {
 .sidebar {
   height: 100%;
   background: #0C2D57;
-  color: #4E7199;
+  color: #599ce3;
   padding-top: 75px;
   font: normal normal 1.125em/1.33em Novecento_wide_bold;
 }
@@ -1278,6 +1278,11 @@ textarea {
 }
 .page-home__sign {
   margin-top: 49px;
+/*  height: 100px;
+  width: 220px;*/
+  width: 120%;
+  margin-left: -50px;
+ /* border: 1px solid white;*/
 }
 .page-home__thumbnail {
   max-width: 84% !important;
@@ -1963,6 +1968,14 @@ textarea {
   }
 }
 @media (max-width: 910px) {
+  .page-home__sign {
+    margin-top: 49px;
+  /*  height: 100px;
+    width: 220px;*/
+    width: 60%;
+    margin-left: -20px;
+   
+  }
   .layout {
     padding-top: 0 !important;
     height: auto;

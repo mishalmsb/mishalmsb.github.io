@@ -40,15 +40,15 @@
             <h3 ng-model="game.gameWinner"> Turn: {{game.currentPlayer}} </h3>
             <h3 ng-model="game.gameWinner"> {{game.winnerMsg}} </h3>
         </div>
-        <div class="board-frame" ng-class="{}">
-          <div class="inner-board" ng-class="class">
+        <div class="board-frame">
+          <div class="inner-board" ng-class="{next: red, all: white}">
             <button class="cell" ng-repeat="position in game.games[0] track by $index"
              ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 0)"
              ng-disabled="game.desableBt($index, 0)" >
              {{ game.games[0][$index] }}
             </button>
           </div>
-          <div class="inner-board">
+          <div class="inner-board" ng-class="class">
             <button class="cell" ng-repeat="position in game.games[1] track by $index"
              ng-model="game.games[board][$index]" ng-click="game.btClicked($index , 1)"
              ng-disabled="game.desableBt($index, 1)" >

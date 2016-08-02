@@ -16,7 +16,7 @@ var str = "<p>Hi! I am recent graduate from General Assembly Web Development Imm
     if( char === '>' ) isTag = false;
 
     if (isTag) return type();
-    setTimeout(type, 80);
+    setTimeout(type, 40);
 }());
 
 function codeAddress() {
