@@ -1252,6 +1252,9 @@ textarea {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+.aboutImg {
+  /*margin-top: 20px;*/
+}
 @media (max-width: 991px) {
   .page-home {
     text-align: center;
@@ -1285,7 +1288,7 @@ textarea {
  /* border: 1px solid white;*/
 }
 .page-home__thumbnail {
-  max-width: 84% !important;
+  max-width: 88% !important;
   max-height: 100% !important;
   transition: all 0.6s ease-in-out;
   /*content:url("../../uploads/home/me.png");*/
@@ -1293,7 +1296,7 @@ textarea {
   /*border: 9px solid #0C2D57;*/
 }
 .page-home__thumbnail:hover {
-  max-width: 88% !important;
+  max-width: 92% !important;
   max-height: 100% !important;
   transition: all 0.3s ease-in-out;
   /*content:url("../../uploads/home/meFunny.png");*/
