@@ -1,5 +1,5 @@
 var str = "<p>Hi! I'm a Junior Web Developer,</p>" +
-          "<p>currently Working as front end developer @ <a href='vastari.com' target='_blank' style='color: grey'>__Vastari</a>.</p>",
+          "<p>currently Working as front end developer @ <a href='vastari.com' target='_blank' style='color: white'>__Vastari</a>.</p>",
     i = 0,
     isTag,
     text;
