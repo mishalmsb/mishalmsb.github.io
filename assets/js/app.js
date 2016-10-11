@@ -1,5 +1,5 @@
-var str = "<p>Hi! I am recent graduate from General Assembly Web Development Immersive course.</p>" +
-          "<p>I am currently looking for a role as a Junior Web Developer.</p>",
+var str = "<p>Hi! I'm Junior Web Developer,</p>" +
+          "<p>currently Working as front end developer at <a href="vastari.com" target="_blank">Vastari</a>.</p>",
     i = 0,
     isTag,
     text;
@@ -22,3 +22,11 @@ var str = "<p>Hi! I am recent graduate from General Assembly Web Development Imm
 function codeAddress() {
   console.log("hello");
 };
+
+<div id="typewriter">
+    <p class="typeHome">Hi! I'm Junior Web Developer,</p>
+    <p class="typeHome">
+        currently Working as front end developer at 
+        <a href="vastari.com" target="_blank">Vastari</a>.
+    </p>
+</div>
