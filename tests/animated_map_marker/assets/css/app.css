@@ -1,0 +1,93 @@
+.map {
+	position: relative;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.map > img {
+	width: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.marker-wrapper {
+	position: absolute;
+}
+
+.marker-animation {
+	width: 10px;
+	height: 10px;
+	/* border: 5px solid #3dcce8; */
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background-color: #3dcce8;
+	z-index: 10;
+	position: absolute;
+}
+
+.marker-info {
+	position: absolute;
+	top: -23px;
+	left: 5px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #3dcce8;
+}
+
+.marker {
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	top: -10px;
+	left: -10px;
+	z-index: 2;
+	opacity: 0;
+	border: 3px solid rgba(0, 166, 205, 1);
+	background: transparent;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	-webkit-animation: animate-marker 2s ease-out;
+	-moz-animation: animate-marker 2s ease-out;
+	animation: animate-marker 2s ease-out;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes 'animate-marker' {
+	0% {
+		transform: scale(0);
+		-moz-transform: scale(0);
+		-webkit-transform: scale(0);
+		opacity: 0;
+	}
+	25% {
+		transform: scale(0);
+		-moz-transform: scale(0);
+		-webkit-transform: scale(0);
+		opacity: 0.1;
+	}
+	50% {
+		transform: scale(0.1);
+		-moz-transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		opacity: 0.3;
+	}
+	75% {
+		transform: scale(0.5);
+		-moz-transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		opacity: 0;
+	}
+}
