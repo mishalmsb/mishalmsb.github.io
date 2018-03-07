@@ -3,27 +3,86 @@
   <head>
     <meta charset="utf-8">
     <title>Animated Map Marker</title>
-    <!-- <link rel="stylesheet" href="assets/vendor/flexbox/flexboxgrid.min.css"> -->
+    <link rel="stylesheet" href="assets/vendor/flexboxgrid/flexboxgrid.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
-
+    <div class="row">
+      <div class="col-xs-12" style="height: 8px; background-color: blue;"></div>
+      <div class="col-xs-12">
+        <h1 style="text-align: center;">Pulse V1</h1>
+      </div>
+    </div>
     <div class="map-wrapper">
-      <div class="map" data-aos="fade">
+      <div id="map" class="map" data-aos="fade">
         <img src="assets/img/map.png">
-        <div class="marker-wrapper" style="top: 41%; left: 44%;">
+        <div id="marker-1" class="marker-wrapper hide" style="top: 41%; left: 44%;">
           <div class="marker-animation"></div>
-          <div class="marker"></div>
-          <div class="marker-info">Exhibitions</div>
+          <div class="pulse-1"></div>
+          <div class="marker-info">Vastari 1</div>
         </div>
-        <div class="marker-wrapper" style="top: 32%; left: 66%;">
+        <div id="marker-2" class="marker-wrapper hide" style="top: 32%; left: 66%;">
           <div class="marker-animation"></div>
-          <div class="marker"></div>
-          <div class="marker-info">Collectors</div>
+          <div class="pulse-1"></div>
+          <div class="marker-info">Vastari 2</div>
+        </div>
+        <div id="marker-3" class="marker-wrapper hide" style="top: 22%; left: 76%;">
+          <div class="marker-animation"></div>
+          <div class="pulse-1"></div>
+          <div class="marker-info">Vastari 3</div>
+        </div>
+        <div id="marker-4" class="marker-wrapper hide" style="top: 22%; left: 34%;">
+          <div class="marker-animation"></div>
+          <div class="pulse-1"></div>
+          <div class="marker-info">Vastari 4</div>
+        </div>
+        <div id="marker-5" class="marker-wrapper hide" style="top: 34%; left: 56%;">
+          <div class="marker-animation"></div>
+          <div class="pulse-1"></div>
+          <div class="marker-info">Vastari 5</div>
         </div>
       </div>
     </div>
-
+    <div class="row">
+      <div class="col-xs-12" style="height: 8px; background-color: blue;"></div>
+      <div class="col-xs-12">
+        <h1 style="text-align: center;">Pulse V2</h1>
+      </div>
+    </div>
+    <div class="map-wrapper">
+      <div id="map-2" class="map" data-aos="fade">
+        <img src="assets/img/map.png">
+        <div id="marker-1" class="marker-wrapper" style="top: 41%; left: 44%;">
+          <div class="marker-animation"></div>
+          <div class="pulse-2"></div>
+          <div class="marker-info">Vastari 1</div>
+        </div>
+        <div id="marker-2" class="marker-wrapper" style="top: 32%; left: 66%;">
+          <div class="marker-animation"></div>
+          <div class="pulse-2"></div>
+          <div class="marker-info">Vastari 2</div>
+        </div>
+        <div id="marker-3" class="marker-wrapper" style="top: 22%; left: 76%;">
+          <div class="marker-animation"></div>
+          <div class="pulse-2"></div>
+          <div class="marker-info">Vastari 3</div>
+        </div>
+        <div id="marker-4" class="marker-wrapper" style="top: 22%; left: 34%;">
+          <div class="marker-animation"></div>
+          <div class="pulse-2"></div>
+          <div class="marker-info">Vastari 4</div>
+        </div>
+        <div id="marker-5" class="marker-wrapper" style="top: 34%; left: 56%;">
+          <div class="marker-animation"></div>
+          <div class="pulse-2"></div>
+          <div class="marker-info">Vastari 5</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12" style="height: 8px; background-color: blue;"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
   </body>
 </html>
