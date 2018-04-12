@@ -9,23 +9,25 @@
   <body>
 
     <div class="container">
-      <div class="row" style="margin-top: 20px;">
-        <div class="col-xs-12 col-sm-6 col-md-3 form-group">
-            <label for="top">Top</label>
-            <input type="text" class="form-control" id="top" aria-describedby="top" placeholder="Enter Top">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3 form-group">
-            <label for="Left">Left</label>
-            <input type="text" class="form-control" id="left" aria-describedby="left" placeholder="Enter Left">
-        </div>
-      </div>
-      <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3" style="text-align: center;">
-              <button id="mark" type="button" class="btn btn-primary">Mark</button>
+      <form id="map-form">
+        <div class="row" style="margin-top: 20px;">
+          <div class="col-xs-12 col-sm-6 col-md-3 form-group">
+              <label for="top">Top</label>
+              <input type="text" class="form-control" id="top" aria-describedby="top" placeholder="Enter Top">
           </div>
-      </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 form-group">
+              <label for="Left">Left</label>
+              <input type="text" class="form-control" id="left" aria-describedby="left" placeholder="Enter Left">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3" style="text-align: center;">
+                <button id="mark" type="submit" class="btn btn-primary">Mark</button>
+            </div>
+        </div>
+      </form>
       <div class="row">
         <div class="col-xs-12 col-sm-10 margin-auto" style="margin: 0 auto;">
           <div id="map-wrapper" class="map-wrapper">
