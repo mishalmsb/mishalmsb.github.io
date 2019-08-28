@@ -1,0 +1,11 @@
+#section4 {
+    .portfolio-container {
+        padding: 15px;
+    }
+    @media screen and (min-width: 75em) {
+        .section-content-holder {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    }
+}

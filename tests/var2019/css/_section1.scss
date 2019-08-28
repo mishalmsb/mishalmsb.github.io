@@ -1,0 +1,44 @@
+.intro-page {
+    min-height: 100vh;
+    background: white;
+    #intro-logo {
+        height: 180px;
+        width: 180px;
+    }
+    .intro-text {
+        opacity: 0;
+    }
+    .block {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h1.big-title {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 100%;
+            padding-top: 30px;
+            letter-spacing: -1px;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .title-desc {
+            font-size: 22px;
+            line-height: 26px;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 925px) {
+        .intro-page {
+            min-height: 0;
+        }
+
+        h1.big-title {
+            font-size: 40px;
+            padding-top: 0;
+        }
+    }
+}

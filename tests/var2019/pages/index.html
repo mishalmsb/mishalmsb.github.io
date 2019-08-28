@@ -1,0 +1,43 @@
+{% extends "_layout.html" %}
+
+<!-- {% block head %}
+  <title>My site</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+{% endblock %} -->
+
+{% block header %}
+{{ header.renderHeader('index') }}
+{% endblock %}
+
+{% block content %}
+
+  {% include "parts/_section-1.html" %}
+
+  {% include "parts/_section-spacer.html" %}
+  {% include "parts/_section-2.html" %}
+
+  {% include "parts/_section-spacer.html" %}
+  {% include "parts/_section-3.html" %}
+
+  {% include "parts/_section-spacer.html" %}
+  {% include "parts/_section-4.html" %}
+
+  {% include "parts/_section-spacer.html" %}
+  {% include "parts/_section-5.html" %}
+
+  {% include "parts/_section-spacer.html" %}
+  {% include "parts/_section-6.html" %}
+
+  {% include "parts/_section-spacer.html" %}
+  {% include "parts/_section-7.html" %}
+
+  {% include "parts/_section-spacer.html" %}
+  {% include "parts/_section-8.html" %}
+
+  {% include "parts/_section-spacer.html" %}
+  {% include "parts/_section-9.html" %}
+
+  {% include "parts/_section-spacer.html" %}
+  {% include "parts/_section-10.html" %}
+{% endblock %}

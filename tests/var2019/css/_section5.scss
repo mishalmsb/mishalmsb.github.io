@@ -1,0 +1,13 @@
+#section5 {
+    .section-content-holder {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .card-counter {
+        .description {
+            &.add-padding {
+                padding: 0 20px;
+            }
+        }
+    }
+}

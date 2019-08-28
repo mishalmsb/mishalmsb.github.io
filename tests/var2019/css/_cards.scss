@@ -1,0 +1,34 @@
+.card-counter {
+    color: white;
+    position: relative;
+    text-align: center;
+    height: auto;
+    img {
+        height: 60px;
+        width: 60px;
+    }
+    .count-numbers {
+        font-size: 32px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .description {
+        right: 35px;
+        top: 65px;
+        font-style: italic;
+        text-transform: capitalize;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .content {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .description {
+        margin-bottom: 30px;
+    }
+    .description,
+    .content {
+        display: block;
+    }
+}
