@@ -9,8 +9,9 @@
             // padding: 10px 0;
             height: 80px;
             .desc {
-                font-size: 80%;
+                font-size: 17px;
                 font-weight: 300;
+                display: block;
             }
         }
         .card-counter {
@@ -81,7 +82,15 @@
     @media only screen and (max-width: 30em) {
         .interns {
             .intern {
+                &.with-desc {
+                    padding: 8px;
+                }
                 font-size: 18px;
+                .desc {
+                    line-height: 18px;
+                    font-size: 15px;
+                    display: block;
+                }
             }
         }
     }
