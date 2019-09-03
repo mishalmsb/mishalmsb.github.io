@@ -1,0 +1,23 @@
+#section10 {
+    // min-height: 900px;
+    // height: 100vh;
+    &.intro-page {
+        #intro-logo {
+            height: 140px;
+            width: 140px;
+        }
+    }
+    h1 {
+        padding-bottom: 0;
+    }
+    .title-3 {
+        margin-top: 20px;
+    }
+    @media only screen and (max-width: 30em) {
+        &.intro-page {
+            .block {
+                top: 37%;
+            }
+        }
+    }
+}

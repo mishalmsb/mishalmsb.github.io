@@ -1,0 +1,88 @@
+.team {
+    .interns {
+        .intern {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 15px;
+            // background-color: $card-bg-color;
+            background-color: #2e3233;
+            // padding: 10px 0;
+            height: 80px;
+            .desc {
+                font-size: 80%;
+                font-weight: 300;
+            }
+        }
+        .card-counter {
+            margin: 20px 0 0 0;
+            .count-numbers {
+                margin-bottom: 0;
+                margin-top: 40px;
+            }
+        }
+    }
+    .team-member {
+        display: block;
+        position: relative;
+        color: white;
+        margin-bottom: 10px;
+        .img-wrapper {
+            filter: grayscale(100%);
+            background: grey;
+        }
+        .member-info {
+            position: absolute;
+            left: 2px;
+            bottom: 2px;
+            .name, .job {
+                display: block;
+            }
+            .name {
+                font-size: 1.5rem;
+                line-height: normal;
+            }
+            .job {
+                font-size: 1rem;
+                letter-spacing: 2px;
+            }
+        }
+        .member-action {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.72);
+            padding: 10px 10px 30px 10px;
+            opacity: 0;
+            font-size: 15px;
+            transition: opacity .5s ease-out;
+            a {
+                margin-left: 2px;
+                opacity: .9;
+                i {
+                    color: #0077B5;
+                    font-size: 30px;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        &:hover {
+            .img-wrapper {
+                filter: none;
+            }
+            .member-action {
+                opacity: 1;
+            }
+        }
+
+    }
+    @media only screen and (max-width: 30em) {
+        .interns {
+            .intern {
+                font-size: 18px;
+            }
+        }
+    }
+}

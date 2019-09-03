@@ -1,0 +1,151 @@
+.card-counter {
+    color: white;
+    position: relative;
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    &:hover {
+        .opacity {
+            opacity: 1;
+        }
+    }
+    img {
+        height: 60px;
+        width: 60px;
+    }
+    .count-numbers {
+        font-size: 28px;
+        line-height: 36px;
+        display: block;
+        margin-bottom: 3px;
+    }
+    .description {
+        right: 35px;
+        top: 65px;
+        font-style: italic;
+        text-transform: capitalize;
+        font-size: 18px;
+        line-height: 23px;
+        margin-left: 5px;
+    }
+    .content {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .description {
+        margin-bottom: 30px;
+    }
+    .description,
+    .content {
+        display: block;
+    }
+    &.backgrounded {
+        background: $card-bg-color;
+    }
+    @media only screen and (max-width: 30em) {
+        .count-numbers {
+            font-size: 23px;
+            line-height: 27px;
+        }
+    }
+}
+
+.card-hover-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    &.backgrounded {
+        background: $card-bg-color;
+    }
+    &.backgrounded-hover {
+        &:hover {
+            background: $card-bg-hover;
+        }
+    }
+}
+
+.card-hover {
+    &.backgrounded {
+        background: $card-bg-color;
+        &:hover {
+            background: $card-bg-hover;
+        }
+    }
+    width: 90%;
+    height: 100%;
+    &.single {
+        width: 95%;
+    }
+    margin: 0 auto;
+    // height: 100%;
+    background-color: #24617e;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    text-align: center;
+    .icon {
+        margin-top: 20px;
+        img {
+            height: 60px;
+        }
+    }
+    .up-info {
+        font-size: 27px;
+        font-style: normal;
+        margin-top: 16px;
+        .up-icon {
+            height: 21px;
+            width: 14px;
+        }
+    }
+
+    .title {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .subtitle {
+        font-style: italic;
+        text-transform: capitalize;
+        font-size: 19px;
+        line-height: 23px;
+        margin-top: 9px;
+    }
+    .text {
+        opacity: 0;
+        margin: 0 auto;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 3px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    &:hover {
+        box-shadow: 0px 3px 0px rgba(255, 255, 255, 0.47);
+        .text {
+            transition: all 0.3s ease;
+            opacity: 1;
+        }
+        .icon {
+            transition: all 0.3s ease;
+            i,
+            img {
+                -webkit-text-fill-color: transparent;
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+        }
+        .subtitle {
+            opacity: 1;
+        }
+    }
+}

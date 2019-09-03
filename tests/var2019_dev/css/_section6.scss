@@ -1,0 +1,28 @@
+#section6 {
+    .portfolio-container {
+        padding: 15px;
+    }
+    .card-counter {
+        &.applications {
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+    .portfolio {
+        &:hover {
+            .overlay {
+                h2 {
+                    text-decoration: underline;
+                    color: $vastari-color;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 74.99em) {
+        .queries {
+            text-align: center;
+        }
+    }
+}

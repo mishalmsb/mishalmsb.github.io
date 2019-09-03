@@ -1,0 +1,52 @@
+// Variables
+$translation-offset: 10px        !default
+$rotation-offset:    180deg      !default
+
+$opacity-timing:     1.2s        !default
+$opacity-easing:     ease-in-out !default
+
+$animation-timing:   .8s         !default
+$animation-delay:    .3s         !default
+$animation-easing:   ease-in-out !default
+
+// Easy-reveal
+$animations: "fade-in-up", "fade-in-down", "fade-in-left", "fade-in-right", "fade-in-rotate-x", "fade-in-rotate-y"
+
+[data-easy-reveal]
+  transform: translateY(10px) //fade-in-up default
+  opacity: 0
+  transition: opacity $opacity-timing $opacity-easing, transform $animation-timing $animation-easing $animation-delay
+
+[data-easy-reveal="fade-in-up"]
+  transform: translateY($translation-offset)
+
+[data-easy-reveal="fade-in-down"]
+  transform: translateY(-$translation-offset)
+
+[data-easy-reveal="fade-in-left"]
+  transform: translateX($translation-offset)
+
+[data-easy-reveal="fade-in-right"]
+  transform: translateX(-$translation-offset)
+
+[data-easy-reveal="fade-in-rotate-x"]
+  transform: rotateX($rotation-offset)
+
+[data-easy-reveal="fade-in-rotate-y"]
+  transform: rotateY($rotation-offset)
+
+@each $animation in $animations
+  .#{$animation}
+    opacity: 1 !important
+
+.fade-in-up, .fade-in-down
+  transform: translateY(0)
+
+.fade-in-left, .fade-in-right
+  transform: translateX(0)
+
+.fade-in-rotate-x
+  transform: rotateX(0)
+
+.fade-in-rotate-y
+  transform: rotateY(0)

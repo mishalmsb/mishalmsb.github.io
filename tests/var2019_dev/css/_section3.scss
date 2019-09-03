@@ -1,0 +1,48 @@
+#section3 {
+    color: white;
+    .section-description {
+        h4 {
+            .big {
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+    }
+    .flags {
+        img.flag {
+            height: 40px;
+            width: 62px;
+            margin-bottom: 10px;
+            margin-left: 15px;
+            opacity: .7;
+            cursor: default;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .flags-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+    .countries {
+        img {
+            height: auto;
+            width: 100%;
+            opacity: .7;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    @media only screen and (max-width: 30em) {
+        .section-description {
+            h4 {
+                .big {
+                    font-size: 29px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+}

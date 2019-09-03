@@ -1,0 +1,77 @@
+#section2 {
+    .card-hover-container {
+        padding: 10px 0;
+        margin-bottom: 0;
+        .card-hover {
+            // background-color: $card-bg-color;
+            background-color: #2e3233;
+            &:hover {
+                background-color: #255972;
+                // background-color: #1f2122;
+            }
+        }
+    }
+    .card-counter {
+        color: white;
+        position: relative;
+        text-align: center;
+        height: auto;
+        img {
+            height: 60px;
+            width: 60px;
+        }
+        .count-numbers {
+            font-size: 28px;
+            line-height: 36px;
+            display: block;
+            margin-bottom: 3px;
+        }
+        .content {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .description {
+            margin-bottom: 30px;
+        }
+        .description,
+        .content {
+            display: block;
+        }
+        @media only screen and (max-width: 30em) {
+            .count-numbers {
+                font-size: 23px;
+                line-height: 27px;
+            }
+        }
+    }
+
+    .card-hover-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        // margin-bottom: 20px;
+        &.backgrounded {
+            background: $card-bg-color;
+        }
+        &.backgrounded-hover {
+            &:hover {
+                background: $card-bg-hover;
+            }
+        }
+    }
+
+    .card-hover {
+        .up-info {
+            .up-icon {
+                height: 21px;
+                width: 19px;
+                margin-right: 2px;
+            }
+        }
+    }
+    .section-logo-container {
+        padding: 20px 0;
+        margin-bottom: 70px;
+    }
+}
