@@ -11,6 +11,15 @@
             }
         }
     }
+    .card-hover {
+        .icon {
+            &.clients-icon {
+                img {
+                    height: 48px;
+                }
+            }
+        }
+    }
     .card-counter {
         color: white;
         position: relative;
