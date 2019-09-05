@@ -2,7 +2,7 @@
 
 Penalty shootout game.
 
-###[Live Demo] (https://warm-refuge-51307.herokuapp.com//)
+###[Live Demo] (http://www.mishalmsb.com/projects/PenaltyKick/index.html)
 
 The Penalty shootout game was built for [General Assembly Web Development Immersive Course] (https://generalassemb.ly/education/web-development-immersive). project one:
 
