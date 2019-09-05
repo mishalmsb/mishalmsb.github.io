@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Penalty Kick Game</title>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <!-- <script src="jquery.animateSprite.js"></script> -->
+  <script src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+<div id="everything">
+    <div id="gameDiv">
+      <div id="field"> 
+        <div id="baliza"> 
+          <div id="keeper"></div>
+        </div>
+        <div class="ball"> </div>
+      </div>
+      
+      <div id="resultDiv">
+        <div></div>
+        <div id="counterDiv">0</div>
+        <div></div>
+        <div id="p1ResultDiv">0</div>
+        <div id="p2ResultDiv">0</div>
+        <br>
+        <div id="plMove">Player 1 Turn</div>
+        <br>
+        <div id="plScored"></div>
+      </div>    
+
+           <div id="player" class="player1">
+                 <img src="images/player1.png" id="plImg1">
+                 <img src="images/player2.png" id="plImg2">
+                 <img src="images/player3.png" id="plImg3">
+           </div>
+           
+      <!-- <div id="player" class="player1">
+            <img id="plImg1">
+            <img id="plImg2">
+            <img id="plImg3">
+      </div> -->
+
+      <div id="btWrap">
+
+          <div class="btWraps"><button id="btLeftTop"></button></div>
+          <div class="btWraps"><button id="btCentreTop"></button></div>
+          <div class="btWraps"><button id="btRigthTop"></button> </div>
+          <div class="btWraps"><button id="btLeftCentre"></button></div>
+          <div class="btWraps"><button id="extraButton"></button></div>
+          <div class="btWraps"><button id="btRigthCentre"></button></div>
+          <div class="btWraps"><button id="btLeftBottom"></button></div>
+          <div class="btWraps"><button id="btCentreCentre"></button></div>
+          <div class="btWraps"><button id="btRigthBottom"></button> </div>
+          <br><br>
+          
+      </div>
+      <div id="btRest"><button id="btRestart">Restart</button></div>
+    </div> 
+    <div  id="goalDiv"> <div></div> </div> 
+    <div  id="missedDiv"> <div></div> </div> 
+</div>
+
+
+<!--      <div id="player" class="player2">
+           <img src="images/player4.png" id="plImg4">
+           <img src="images/player5.png" id="plImg5">
+           <img src="images/player6.png" id="plImg6">
+     </div> -->
+<audio id="audioGoal"></audio>
+<audio id="audioCrowd"></audio>
+</body>
+</html>
