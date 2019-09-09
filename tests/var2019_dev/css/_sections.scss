@@ -25,6 +25,21 @@
             height: 90px;
             width: 90px;
             margin-bottom: 15px;
+            // border: 3px solid transparent;
+            border-radius: 50%;
+            border: 0px solid #9798998a;
+            transition: border-width 0.2s linear;
+        }
+        .logo-link {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 15px;
+            &:hover {
+                .section-logo-2 {
+                    // border: 3px solid #979899;
+                    border-width: 3px;
+                }
+            }
         }
         .section-title {
             font-size: 48px;
