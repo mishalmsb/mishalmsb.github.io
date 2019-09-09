@@ -62,7 +62,7 @@ function initScrollReveal() {
   $(window).scroll(reveal);
 }
 function scrollToTopPage() {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
 }
 
 // function stopStickers() {
