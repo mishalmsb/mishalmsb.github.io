@@ -38,6 +38,16 @@
         opacity: 1;
     }
 }
+.with-opacity-content {
+    &:hover {
+        .opacity {
+            opacity: 1;
+        }
+    }
+}
+.no-opacity {
+    opacity: 1;
+}
 .italic {
     font-style: italic;
 }
