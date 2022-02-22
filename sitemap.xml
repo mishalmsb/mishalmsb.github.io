@@ -1,33 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <url>
-    <loc>https://mishalmsb.github.io/categories/</loc>
-  </url>
+  <sitemap>
+    <loc>https://mishalmsb.github.io/en/sitemap.xml</loc>
+    
+  </sitemap>
   
-  <url>
-    <loc>https://mishalmsb.github.io/cards/exhibitions/</loc>
-  </url>
+  <sitemap>
+    <loc>https://mishalmsb.github.io/pt/sitemap.xml</loc>
+    
+  </sitemap>
   
-  <url>
-    <loc>https://mishalmsb.github.io/dashboards/version-1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mishalmsb.github.io/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mishalmsb.github.io/cards/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mishalmsb.github.io/dashboards/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mishalmsb.github.io/tags/</loc>
-  </url>
-  
-</urlset>
+</sitemapindex>

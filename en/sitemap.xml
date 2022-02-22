@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://mishalmsb.github.io/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mishalmsb.github.io/pt/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mishalmsb.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mishalmsb.github.io/cards/exhibitions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mishalmsb.github.io/dashboards/version-1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mishalmsb.github.io/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mishalmsb.github.io/pt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mishalmsb.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mishalmsb.github.io/cards/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mishalmsb.github.io/cv/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mishalmsb.github.io/pt/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mishalmsb.github.io/cv/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mishalmsb.github.io/dashboards/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mishalmsb.github.io/old_cv/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mishalmsb.github.io/old_cv/en/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mishalmsb.github.io/old_cv/pt/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mishalmsb.github.io/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://mishalmsb.github.io/pt/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mishalmsb.github.io/tags/"
+                />
+  </url>
+  
+</urlset>
