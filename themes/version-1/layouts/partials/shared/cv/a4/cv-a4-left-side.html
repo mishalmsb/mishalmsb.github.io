@@ -1,0 +1,120 @@
+{{ $lang := .lang }}
+{{ $context := .context }}
+
+{{ with $context }}
+  <div class="left">
+    <div class="section logo-container">
+      <img class="img-fluid" src="{{.logo | absURL}}">
+    </div>
+    <div class="section main">
+      <div class="content">
+        <div>
+          {{- partial "shared/icons/website.html" . -}}
+        </div>
+        <div>
+          <p>{{.website}}</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div>
+          {{- partial "shared/icons/phone.html" . -}}
+        </div>
+        <div>
+          <p>
+            {{ with .phone }}
+              {{ if eq $lang "en" }}
+                {{.uk}}
+              {{ else }}
+                {{.pt}}
+              {{ end }}
+            {{ end }}
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div>
+          {{- partial "shared/icons/email.html" . -}}
+        </div>
+        <div>
+          <p>{{.email}}</p>
+        </div>
+      </div>
+
+      {{/*  <div class="content">
+        <div>
+          {{- partial "shared/icons/pt-flag.html" . -}}
+        </div>
+        <div>
+          <p>{{- partial "shared/cv/a4/value-by-lang.html" (dict "context" .nationality  "lang" $lang) -}}</p>
+        </div>
+      </div>  */}}
+    </div>
+    {{ with .skills }}
+      <div class="section">
+        <p class="section-title section-title-{{$lang}}">
+          {{- partial "shared/cv/a4/value-by-lang.html" (dict "context" .title  "lang" $lang) -}}
+        </p>
+        <div class="line"></div>
+        <div class="options">
+          {{ range .options }}
+            <div class="option">
+              <p>{{.}}</p>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ with .basicSkills }}
+      <div class="section">
+        <p class="section-title section-title-{{$lang}}">
+          {{- partial "shared/cv/a4/value-by-lang.html" (dict "context" .title  "lang" $lang) -}}
+        </p>
+        <div class="line"></div>
+        <div class="options">
+          {{ range .options }}
+            <div class="option">
+              <p>{{.}}</p>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ with .education }}
+      <div class="section">
+        <p class="section-title section-title-{{$lang}}">
+          {{- partial "shared/cv/a4/value-by-lang.html" (dict "context" .title  "lang" $lang) -}}
+        </p>
+        <div class="line"></div>
+        <div class="options edication">
+          {{ range .options }}
+            <div class="option">
+              <p>{{- partial "shared/cv/a4/value-by-lang.html" (dict "context" .course  "lang" $lang) -}}</p>
+              <p>{{.school}} - {{.when}}</p>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ with .languages }}
+      <div class="section">
+        <p class="section-title section-title-{{$lang}}">
+          {{- partial "shared/cv/a4/value-by-lang.html" (dict "context" .title  "lang" $lang) -}}
+        </p>
+        <div class="line"></div>
+        <div class="options">
+          {{ $options := partial "shared/cv/a4/value-by-lang.html" (dict "context" .options  "lang" $lang) . }}
+          {{ range $options }}
+            <div class="option">
+              <p>{{.}}</p>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

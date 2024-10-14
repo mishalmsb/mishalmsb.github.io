@@ -1,0 +1,20 @@
+// Variables
+$c-main: hsla(0, 100%, 100%, .75);
+$c-secondary: hsla(200, 5%, 11%, 1);
+$c-malabars: hsla(178, 40%, 49%, 1);
+$c-trunk: hsla(23, 18%, 29%, 1);
+$c-white: hsla(0, 255%, 255%, 1);
+$bg-main: hsla(210, 3%, 15%, 1);
+$city-skyscrappers: 5;
+$city-cranes: 3;
+$city-trees: 8;
+$crane-width: 260px;
+$crane-height: $crane-width / 1.5;
+$crane-border: 1px;
+$trunk-height: 8px;
+$media900: 900px;
+$media768: 768px;
+$media450: 450px;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');

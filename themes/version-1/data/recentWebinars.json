@@ -1,0 +1,58 @@
+[
+  {
+    "id": 52,
+    "title": "Gabby Test",
+    "summary": "gabby test",
+    "description": "<p>gabby test description </p>",
+    "webinarDate": "2021-07-25T17:15:00",
+    "series": "Vastari Connects",
+    "featured": false,
+    "registrationUrl": "https://docs.google.com/document/d/11UfPWT1IFaMC_PxZbWdwO2rb9it4GrG7W5-m8B3o-SI/edit#heading=h.emhacqmsdkm0",
+    "videoUrl": "https://www.youtube.com/watch?v=6Pl3bUHQGcw",
+    "imageName": "6Pl3bUHQGcw.jpg",
+    "imageUrl": "https://devvastarimedia.blob.core.windows.net/webinars/6Pl3bUHQGcw.jpg",
+    "duration": "1 hour, 57 seconds"
+  },
+  {
+    "id": 50,
+    "title": "Launching the first musuem NFT",
+    "summary": "The Whitworth and Vastari are dropping an NFT!",
+    "description": "<p>The Whitworth and Vastari are dropping an NFT! </p><p><br></p><p>The Whitworth, in partnership with Vastari, has entered into the emerging world of NFTs to test alternative models of financing social art practice. Together we have created the first UK museum-accredited NFT. The NFT (an edition of 50 with 2 museum proofs) will be selling on 28 July for 999 Tez on Hicetnunc. The NFT will be exhibited at the Whitworth at an exhibition in 2023. </p><p><br></p><p>At a time of great economic and social instability, this project explores the potentials of blockchain technology, cryptocurrencies and museum collections to test new ways of diverting private capital into social funds. For more information visit: https://whitworth.vastari.com/theancientofdaysnft </p><p><br></p><p>This webinar will explore: </p><p><br></p><p>- What inspired this project. </p><p>- The important things other cultural institutions should be taking into consideration if they are thinking about minting NFTs. </p><p>- What has and hasn't worked well in the NFT project experience thus far. </p><p>- Potential pitfalls museums should think about surrounding NFTs. </p><p>- Trends in the NFT space that fellow museums should look out for that could open up new opportunities for those looking to work with NFTs.</p>",
+    "webinarDate": "2021-07-20T15:00:00",
+    "series": "Vastari Connects",
+    "featured": false,
+    "registrationUrl": null,
+    "videoUrl": "https://www.youtube.com/watch?v=6Pl3bUHQGcw",
+    "imageName": "6Pl3bUHQGcw.jpg",
+    "imageUrl": "https://devvastarimedia.blob.core.windows.net/webinars/6Pl3bUHQGcw.jpg",
+    "duration": "1 hour, 57 seconds"
+  },
+  {
+    "id": 47,
+    "title": "How museums can begin to engage with the younger generation of arts patrons",
+    "summary": "Thoughts from Lady Alison Myners Chair of the Royal Academy Trust",
+    "description": "Thoughts from Lady Alison Myners Chair of the Royal Academy Trust",
+    "webinarDate": "2021-06-21T00:01:00",
+    "series": "Digi-what?",
+    "featured": false,
+    "registrationUrl": null,
+    "videoUrl": "https://www.youtube.com/watch?v=UPSoHgkSgHs",
+    "imageName": "UPSoHgkSgHs.jpg",
+    "imageUrl": "https://devvastarimedia.blob.core.windows.net/webinars/UPSoHgkSgHs.jpg",
+    "duration": "2 minutes, 56 seconds"
+  },
+  {
+    "id": 44,
+    "title": "Create new Webinar 1",
+    "summary": "test",
+    "description": "Three years after the first Art + Tech Summit at Christie’s in London exploring blockchain, what has happened? A non-fungible token artwork by American digital artist Beeple sold for $69m, two days after Vastari hosted a webinar on NFT’s and digital art. The panel will look at how the 2018 summit impacted the market and the subsequent expansions. What has happened to the three use cases presented at the summit: registration, digital art and tokenisation?\r<br>\r<br>The panel will explore whether the landscape is different in Asia, North America and Europe. Given this talk is happening two days before Earth Day - our panel will also discuss the environmental impact of blockchain technology, and how the industry is correcting it.<br><br>Elliot Safra<br><br>Elliot Safra is a partner at AndArt Agency, a creative agency focused on unleashing synergies between global brands and the art world. Prior to AndArt Agency he was Senior Director of Global Strategy for Lévy Gorvy and worked in the UK Chairman's Office at Christie's. Safra also serves as Vice-Chair of the Board of the Israel Museum, Jerusalem. He started his NFT art collection in 2018.<br><br>Qinwen Wang <br><br>Qinwen Wang is the Producer of Virtual Niche, the world’s first crypto art exhibition in UCCA lab.  She has been a continuous supporter and contributor for Christie's Art & Tech Summit Initiative, and launched the Art & Tech online course. Wang has spoken at Bahrain Art Week, APEC Women Connect, Shanghai West Bund Art Fair and Christie's Art & Tech Summit on how Web3.0 technology (especially blockchain) will boost the Art world.<br><br>Anne Bracegirdle<br><br>Anne Bracegirdle is the US Head of Sales for Convelio. Bracegirdle before working at Convelio was the Senior Director or Special Projects at Superblue, the Photography Specialist at Christie's and internal lead for the Art + Tech Summit alongside Elliot Safra. She specialises in innovative tech solutions for the creative world.",
+    "webinarDate": "2021-04-21T09:22:20",
+    "series": "Digi-what?",
+    "featured": false,
+    "registrationUrl": null,
+    "videoUrl": "https://youtube.com/watch?v=l3ywNVsv-vE",
+    "imageName": "l3ywNVsv-vE.jpg",
+    "imageUrl": "https://devvastarimedia.blob.core.windows.net/webinars/l3ywNVsv-vE.jpg",
+    "duration": "1 hour, 3 minutes, 43 seconds"
+  }
+]

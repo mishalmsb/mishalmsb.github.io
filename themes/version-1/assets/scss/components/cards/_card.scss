@@ -1,0 +1,19 @@
+.card {
+  .action-footer {
+    // font-size: .8rem;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .action {
+    padding: 10px;
+    flex: 1 1 auto !important;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    color: $grey-dark;
+    &:hover {
+      background-color: $vastari-secondary;
+      color: $white;
+    }
+  }
+}

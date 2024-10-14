@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head/head.html" . -}}
+    <body>
+        {{- partial "loader.html" . -}}
+        {{- partial "header.html" . -}}
+				<script src="https://kit.fontawesome.com/ab87a93ebd.js" crossorigin="anonymous"></script>
+        <div class="wrapper">
+            {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer/footer.html" . -}}
+    </body>
+</html>

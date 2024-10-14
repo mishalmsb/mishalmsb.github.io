@@ -1,0 +1,60 @@
+{{ $lang := .lang }}
+{{ $context := .context }}
+
+{{ with $context }}
+  {{ $profession := .profession }}
+  {{ with .experience }}
+    <div class="right">
+      <div class="title">
+        <p>{{$profession}}</p>
+        <div class="line"></div>
+      </div>
+      <div class="sub-title">
+        <p>
+          {{- partial "shared/cv/a4/value-by-lang.html" (dict "context" .title  "lang" $lang) -}}
+        </p>
+      </div>
+      <div class="experience">
+        {{ range .options }}
+          <div class="option">
+            <div class="position-when">
+              <div class="position">
+                <p>{{- partial "shared/cv/a4/value-by-lang.html" (dict "context" .position  "lang" $lang) -}}</p>
+              </div>
+              <div class="when">
+                {{- partial "shared/cv/a4/value-by-lang.html" (dict "context" .when  "lang" $lang) -}}
+              </div>
+            </div>
+            {{ with .company }}
+              <p class="company">
+                {{- partial "shared/cv/a4/value-by-lang.html" (dict "context" .name  "lang" $lang) -}}
+                &nbsp;
+                <span class="location">(&nbsp;{{- partial "shared/cv/a4/value-by-lang.html" (dict "context" .location  "lang" $lang) -}}&nbsp;)</span>
+              </p>
+            {{ end }}
+            {{ if .tasks }}
+              <div class="tasks">
+                {{ $tasks := partial "shared/cv/a4/value-by-lang.html" (dict "context" .tasks  "lang" $lang) . }}
+                {{ range $tasks }}
+                  <p class="task">{{.}}</p>
+                {{ end }}
+              </div>
+            {{ end }}
+            <div class="projects">
+              {{ with .projects }}
+                <p class="project">{{ delimit . ", " }}</p>
+              {{ end }}
+            </div>
+            <div class="techs">
+              {{ range .tech }}
+                <p class="tech">{{.}}</p>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+
+    </div>
+  {{ end }}
+
+{{ end }}

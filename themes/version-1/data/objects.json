@@ -1,0 +1,45 @@
+{
+  "imageBaseUrl": "https://devvastarimedia.blob.core.windows.net/exhibitions/thumbs/350x234_",
+  "items": [
+    {
+      "code": "8594f9144a084363b92242233b528a36",
+      "id": 2827,
+      "description": null,
+      "title": "The Good Earth",
+      "artistsText": "Wu, Lan Chiann",
+      "category": "Other",
+      "image": "16042014061149_4 the-good-earth_thumb.jpg",
+      "locationCountry": "United States of America"
+    },
+    {
+      "code": "60c2b5399fcd4cce9e53e47d3a4e30ec",
+      "id": 3215,
+      "description": null,
+      "title": "The Tower of Babel",
+      "artistsText": "Escobar, Pablo",
+      "category": "Acrylic",
+      "image": "60c2b5399fcd4cce9e53e47d3a4e30ec_1507127615322.jpg",
+      "locationCountry": "United Kingdom"
+    },
+    {
+      "code": "110adeb66e1c4935a51280392074eb79",
+      "id": 7849,
+      "description": null,
+      "title": "Painting",
+      "artistsText": "Warhol, Andy",
+      "category": "Paintings",
+      "image": "110adeb66e1c4935a51280392074eb79_1568627124314.png",
+      "locationCountry": "Spain"
+    },
+    {
+      "code": "7b5727a0687e438686e30c9d2d33d836",
+      "id": 2,
+      "description": null,
+      "title": "Red House #12 ",
+      "artistsText": "And Oliver Chanarin, Adam Broomberg",
+      "category": "Fine Art",
+      "image": "01022016115240_red_house_12_optimized.jpg",
+      "locationCountry": null
+    }
+  ]
+}

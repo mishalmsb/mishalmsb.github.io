@@ -1,0 +1,106 @@
+{{ define "main" }}
+	<div class="container mt-5 pt-5 mb-5 pb-5">
+		{{ with site.Data.exhibitions }}
+			<div class="row mb-5">
+				<div class="col-12">
+					<h5 class="text-center">Effect - 1</h5>
+				</div>
+				{{ range .items }}
+					<div class="col-12 col-md-3">
+						{{- partial "shared/cards/exhibitions/effect-1.html" . -}}
+					</div>
+				{{ end }}
+			</div>
+			<div class="row mb-5">
+				<div class="col-12">
+					<h5 class="text-center">Effect - 2</h5>
+				</div>
+				{{ range .items }}
+					<div class="col-12 col-md-3">
+						{{- partial "shared/cards/exhibitions/effect-2.html" . -}}
+					</div>
+				{{ end }}
+			</div>
+			<div class="row mb-5">
+				<div class="col-12">
+					<h5 class="text-center">Effect - 3</h5>
+				</div>
+				{{ range .items }}
+					<div class="col-12 col-md-3">
+						{{- partial "shared/cards/exhibitions/effect-3.html" . -}}
+					</div>
+				{{ end }}
+			</div>
+			<div class="row mb-5">
+				<div class="col-12">
+					<h5 class="text-center">Effect - 4</h5>
+				</div>
+				{{ range .items }}
+					<div class="col-12 col-md-3">
+						{{- partial "shared/cards/exhibitions/effect-4.html" . -}}
+					</div>
+				{{ end }}
+			</div>
+			<div class="row mb-5 pb-5">
+				<div class="col-12">
+					<h5 class="text-center">Effect - 5</h5>
+				</div>
+				{{ range .items }}
+					<div class="col-12 col-md-3">
+						{{- partial "shared/cards/exhibitions/effect-5.html" . -}}
+					</div>
+				{{ end }}
+			</div>
+			<div class="row mb-5">
+				<div class="col-12">
+					<h5 class="text-center">Effect - 6</h5>
+				</div>
+				{{ range .items }}
+					<div class="col-12 col-md-3">
+						{{- partial "shared/cards/exhibitions/effect-6.html" . -}}
+					</div>
+				{{ end }}
+			</div>
+			<div class="row mb-5">
+				<div class="col-12">
+					<h5 class="text-center">Effect - 7</h5>
+				</div>
+				{{ range .items }}
+					<div class="col-12 col-md-3">
+						{{- partial "shared/cards/exhibitions/effect-7.html" . -}}
+					</div>
+				{{ end }}
+			</div>
+			{{/*  <div class="row mb-5">
+				<div class="col-12">
+					<h5 class="text-center">Effect - 8</h5>
+				</div>
+				{{ range .items }}
+					<div class="col-12 col-md-3">
+						{{- partial "shared/cards/exhibitions/effect-8.html" . -}}
+					</div>
+				{{ end }}
+			</div>  */}}
+			{{/*  <div class="row mb-5">
+				<div class="col-12">
+					<h5 class="text-center">Effect - 9</h5>
+				</div>
+				{{ range .items }}
+					<div class="col-12 col-md-3">
+						{{- partial "shared/cards/exhibitions/effect-9.html" . -}}
+					</div>
+				{{ end }}
+			</div>  */}}
+			{{/*  <div class="row mb-5">
+				<div class="col-12">
+					<h5 class="text-center">Effect - 10</h5>
+				</div>
+				{{ range .items }}
+					<div class="col-12 col-md-3">
+						{{- partial "shared/cards/exhibitions/effect-10.html" . -}}
+					</div>
+				{{ end }}
+			</div>  */}}
+		{{ end }}
+	</div>
+{{ end }}

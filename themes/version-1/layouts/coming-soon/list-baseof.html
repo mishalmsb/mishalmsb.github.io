@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  {{ "<!-- Under construction Stylesheet -->" | safeHTML }}
+  {{ $styleDev := resources.Get "scss/dev.scss" | css.Sass (dict "outputStyle" "compressed") | fingerprint }}
+  <link rel="stylesheet" href="{{ $styleDev.Permalink }}" />
+
+	<body class="coming-soon">
+		<div class="wrapper">
+				{{- block "main" . }}{{- end }}
+		</div>
+
+		{{ with site.Params.devPlugins }}
+			{{ range .externalPlugins.js}}
+				{{ $script := .link }}
+				<script src="{{ .link | relURL }}"></script>
+			{{ end }}
+
+			{{ range .internalPlugins.js}}
+				{{ $js := resources.Get .link | babel | minify}}
+				<script src="{{ $js.Permalink }}"></script>
+			{{ end }}
+		{{ end }}
+  </body>
+</html>

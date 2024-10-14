@@ -1,0 +1,15 @@
+
+
+
+{{ define "main" }}
+
+	{{ $current := . }}
+	{{ $pageId := $current.Params.id}}
+	{{ $dashboard1 := "dashboard-1"}}
+
+	{{ if eq $pageId $dashboard1}}
+		{{ .Render "dashboard-1" }}
+	{{ end }}
+
+
+{{ end }}

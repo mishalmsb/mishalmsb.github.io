@@ -1,0 +1,15 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  @include flex-center();
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: column;
+}

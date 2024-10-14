@@ -1,0 +1,20 @@
+<div class="card hover-reveal-7 h-100">
+  {{- partial "shared/cards/exhibitions/content/image.html" . -}}
+  <p class="fw-bold card-title m-0 text-center bg-light h-100 d-flex align-items-center justify-content-center">{{.title}}</p>
+  <div class="card-body text-center">
+    <div class="card-content">
+      <p class="fw-bold">{{.title}}</p>
+      <div>
+        {{/*  <i class="fas fa-money-check-alt"></i>  */}}
+        {{.hiringFee}}
+      </div>
+      <div>
+        <i class="fas fa-arrows-alt mr-1"></i>
+        {{.spaceRequirement}}
+      </div>
+    </div>
+  </div>
+  <div class="card-footer action-footer">
+    {{- partial "shared/cards/exhibitions/content/actions.html" . -}}
+  </div>
+</div>

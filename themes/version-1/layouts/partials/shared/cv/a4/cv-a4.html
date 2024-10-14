@@ -1,0 +1,10 @@
+{{ $lang := .lang }}
+{{ $class := .class | default "" }}
+
+{{ with site.Data.personalDetail }}
+  <page class="cv cv-{{$lang}} {{$class}}" size="A4">
+    {{- partial "shared/cv/a4/cv-a4-header.html" (dict "context" . "lang" $lang) -}}
+    {{- partial "shared/cv/a4/cv-a4-left-side.html" (dict "context" . "lang" $lang) -}}
+    {{- partial "shared/cv/a4/cv-a4-right-side.html" (dict "context" . "lang" $lang) -}}
+  </page>
+{{ end }}

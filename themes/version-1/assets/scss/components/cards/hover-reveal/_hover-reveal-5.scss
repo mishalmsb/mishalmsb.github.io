@@ -1,0 +1,24 @@
+.card {
+  &.hover-reveal-5 {
+    overflow: hidden;
+    height: calc(100% + 42px);
+    .card-body {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      transform: translateY(108px);
+      transition: transform 0.3s;
+      background-color: $white;
+      padding: 0;
+      .content {
+        padding: 10px;
+      }
+    }
+    &:hover {
+      .card-body {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+

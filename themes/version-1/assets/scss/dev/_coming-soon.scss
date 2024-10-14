@@ -1,0 +1,55 @@
+body {
+  &.coming-soon {
+    font-size: 12px; // 1rem=12px
+    font-family: "Josefin Sans", "Roboto", sans-serif;
+    color: $c-main;
+    overflow: hidden;
+    background-color: $bg-main;
+    * {
+      box-sizing: border-box;
+    }
+
+    .wrapper {
+      position: relative;
+      height: 100vh;
+      // z-index: -10;
+      // background: linear-gradient(to top, $c-secondary, $c-main);
+      display: flex;
+      align-items: center;
+    }
+    .spacer {
+      margin: 1rem 0;
+    }
+
+    .content {
+      width: 100vw;
+      position: relative;
+      z-index: 999;
+      .logo {
+        max-width: 125px;
+        margin: 0 auto;
+      }
+      .logo {
+        max-width: 125px;
+        margin: 0 auto;
+      }
+      .title {
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+      }
+      .description {
+        margin-top: 1rem;
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+        span:first-child {
+          margin-right: -0.7rem;
+        }
+        span:last-child {
+          margin-left: -0.7rem;
+        }
+      }
+    }
+  }
+}

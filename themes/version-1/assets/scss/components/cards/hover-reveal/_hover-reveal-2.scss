@@ -1,0 +1,10 @@
+.card {
+  &.hover-reveal-2 {
+    @extend .hover-reveal-1;
+    .hover-show {
+      justify-content: flex-end;
+      height: 0;
+    }
+
+  }
+}

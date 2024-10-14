@@ -1,0 +1,5 @@
+{{ if site.Params.inConstruction }}
+  {{ .Render "coming-soon/list" }}
+{{ else }}
+  {{ .Render "home/list" }}
+{{ end }}

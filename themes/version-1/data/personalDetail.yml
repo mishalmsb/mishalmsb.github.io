@@ -1,0 +1,302 @@
+name: Mishal Shashikant
+logo: 'images/logos/m.svg'
+website: mishalmsb.com/cv/
+profession: Web Developer
+phone:
+  pt: "+351 937172330"
+  uk: "+351 937172330"
+nationality:
+  en: Portuguese
+  pt: "Português"
+email: mishalmsb@gmail.com
+skills:
+  title:
+    en: skills
+    pt: skills
+  options:
+  - JavaScript
+  - Angular
+  - React
+  - HTML
+  - CSS/SCSS
+  - Bootstrap
+  - Lodash
+  - Hugo
+  - Chakra UI
+  - Spartacus
+  - Bootstrap
+  - "& More"
+basicSkills:
+  title:
+    en: Basic Knowledge
+    pt: Conhecimentos Basicos
+  options:
+  - Node.JS
+  - Python
+  - MongoDB
+  - Sockets.IO
+  - Ruby on Rails
+  - VueJs
+  - Gulp
+  - SQL
+  - GraphQL
+  - SAP Spartacus
+  - Gatsby
+  - Zustad
+  - React Query
+  - "& More"
+education:
+  title:
+    en: Education
+    pt: Educação
+  options:
+  - school: General Assembly
+    course:
+      en: Web Development Immersive
+      pt: Web Development Immersive
+    when: 2016
+  - school: Cinel
+    course:
+      en: Telecomms Technician
+      pt: Técnico de telecomunicações
+    when: 2009
+  - school: Escola Verney
+    course:
+      en: 12 Grade
+      pt: "12º Ano"
+    when: 1998
+languages:
+  title:
+    en: Languages
+    pt: Linguas
+  options:
+    en:
+      - Portuguese
+      - English
+      - Hindi
+      - Gujarati
+    pt:
+      - Português
+      - Inglês
+      - Hindi
+      - Gujarati
+experience:
+  title:
+    en: Experience
+    pt: Experiência
+  options:
+    - position:
+        en: Front-end Developer
+        pt: Front-end Developer
+      company:
+        name:
+          en: Boost-IT
+          pt: Boost-IT
+        location:
+          en: Lisbon
+          pt: Lisboa
+        website: 'https://www.xgeeks.io/'
+      when:
+          en: Since 03/2024
+          pt: Deste 03/2024
+      tech:
+        - Angular
+        - SAP composable storefront (Spartacus)
+        - CLS improvements
+      tasks:
+        en:
+          - Develop new features for B2C e-commerce application (Angular, SAP Spartacus).
+          - Performance and CLS improvements
+        pt:
+          - pending
+    - position:
+        en: Front-end Developer
+        pt: Front-end Developer
+      company:
+        name:
+          en: Capgemini
+          pt: Capgemini
+        location:
+          en: Lisbon
+          pt: Lisboa
+        # website: 'https://www.xgeeks.io/'
+      when:
+          en: 12/2023 - 03/2024
+          pt: 12/2023 - 03/2024
+      # tech:
+      #   - Angular
+      #   - SAP Spartacus
+      #   - React
+      #   - Python
+      #   - Gatsby
+      #   - Zustad
+      #   - Chakra UI
+      #   - React Query
+      # projects:
+      #   - Franke (B2B ecommerce)
+      #   - Geekathon
+      #   - SMS (skill managment system)
+      tasks:
+        en:
+          - Support on internal projects (Angular).
+        pt:
+          - pending
+    - position:
+        en: Front-end Developer
+        pt: Front-end Developer
+      company:
+        name:
+          en: xgeeks
+          pt: xgeeks
+        location:
+          en: Lisbon
+          pt: Lisboa
+        website: 'https://www.xgeeks.io/'
+      when:
+          en: 2022-2023
+          pt: 2022-2023
+      tech:
+        - Angular
+        - SAP Spartacus
+        - React
+        - Python
+        - Gatsby
+        - Zustad
+        - Chakra UI
+        - React Query
+      # projects:
+      #   - Franke (B2B ecommerce)
+      #   - Geekathon
+      #   - SMS (skill managment system)
+      tasks:
+        en:
+          - Develop new features for B2B e-commerce application (Angular v12, SAP Spartacus).
+          - Develop new features for the internal management tool (React, React Query, zustand, Python, FastAPI, Chakra UI).
+        pt:
+          - pending
+    - position:
+        en: Front-end Developer
+        pt: Front-end Developer
+      company:
+        name:
+          en: Vastari
+          pt: Vastari
+        location:
+          en: London
+          pt: Londres
+        website: 'https://www.vastari.com/'
+      when:
+          en: 2016-2022
+          pt: 2016-2022
+      tech:
+        - Angular
+        - NPM
+        - Ghost
+        - Pug
+        - Bootstrap
+        - Materialize
+        - Nunjucks
+        - Git
+        - Gulp
+        - Hugo
+      # projects:
+      #   - Web application
+      #   - vastari.com
+      #   - Landing pages
+      #   - Annual reports
+      #   - blog.vastari.com
+      tasks:
+        en:
+          - Develop and maintain web applications (Angular Beta to v8, Bootstrap).
+          - Develop and maintain the blog application (Ghost).
+          - Develop and maintain web pages including the company website, landing pages and annual reports (Hugo, Nunjucks, Pug).
+          - Turn designer sketches into production-ready code using a mobile-first approach.
+          - Create new Azure pipelines with the help of the tech lead.
+          - Participate in daily stand-ups, project kick-offs and presentations.
+        pt:
+          - pending
+    # - position:
+    #     en: Web Development Immersive
+    #     pt: Web Development Immersive
+    #   company:
+    #     name:
+    #       en: General Assembly
+    #       pt: General Assembly
+    #     location:
+    #       en: London
+    #       pt: Londres
+    #   when:
+    #       en: 2016
+    #       pt: 2016
+      # tech:
+      #   - HTML
+      #   - CSS
+      #   - JavaScript
+      #   - Angular.js
+      #   - Ruby on Rails
+      #   - Agile
+      # tasks:
+      #   en:
+      #     - An intensive 12-week course in full-stack web development (project-based), taught by industry professionals.
+      #   pt:
+      #     - Um curso intensivo de 12 semanas em desenvolvimento web full-stack, ministrado por profissionais do setor.
+    # - position:
+    #     en: Warehouse Operative
+    #     pt: Operador de Armazém
+    #   company:
+    #     name:
+    #       en: Sainsbury DC
+    #       pt: Sainsbury DC
+    #     location:
+    #       en: London
+    #       pt: Londres
+    #   when:
+    #       en: 2016
+    #       pt: 2016
+    #   tasks:
+    #     en:
+    #       - Order Picker.
+    #     pt:
+    #       - Selecionador de pedidos.
+    # - position:
+    #     en: Production Operative
+    #     pt: Operador de Produção
+    #   company:
+    #     name:
+    #       en: Heinz Factory
+    #       pt: Heinz Factory
+    #     location:
+    #       en: Worcester
+    #       pt: Worcester
+    #   when:
+    #       en: 2015
+    #       pt: 2015
+    #   tasks:
+    #     en:
+    #       - Production Line Operative and machine operative.
+    #     pt:
+    #       - Operador de linha de produção e operador de máquina.
+    # - position:
+    #     en: Telecom Technician
+    #     pt: Técnico de telecomunicações
+    #   company:
+    #     name:
+    #       en: Representing Optimus and Portugal Telecom
+    #       pt: Representando a Optimus e a Portugal Telecom
+    #     location:
+    #       en: Lisbon
+    #       pt: Lisboa
+    #   when:
+    #       en: 2008-2014
+    #       pt: 2008-2014
+    #   tasks:
+    #     en:
+    #       - Telecom technician.
+    #     pt:
+    #       - Técnico de telecomunicações.
+        # en:
+        #   - Field service technicians, installing and repairing telecom services from Optimus/Pt servers to clients home.
+        #   - Teach and support new technicians.
+        #   - Provide weekly report to management about companies technicians and discuss the improvements that can be made.
+        # pt:
+        #   - Técnico de telecomunicações.

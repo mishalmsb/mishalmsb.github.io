@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <div class="main">
+    {{- partial "home/me.html" . -}}
+    {{- partial "home/about.html" . -}}
+    {{- partial "home/portfolio.html" . -}}
+    {{- partial "home/contact.html" . -}}
+  </div>
+  {{- partial "home/news-feed.html" . -}}
+{{ end }}

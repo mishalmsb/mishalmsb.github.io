@@ -1,0 +1,85 @@
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.card {
+  &.hover-reveal-6 {
+    position: relative;
+    overflow: hidden;
+    visibility: visible;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-name: fadeInUp;
+
+    .card-body {
+      padding: 0;
+      // position: relative;
+    }
+    .content {
+      position: absolute;
+      padding: 1rem;
+      padding-bottom: .5rem;
+      top: 0px;
+      left: -100%;
+      height: 100%;
+      width: 100%;
+      // background: linear-gradient(to bottom,#fb6d62,#ffab6b);
+      background: rgba(0, 0, 0, .75);
+      text-align: center;
+      // animation-duration: 1s;
+      // animation-delay: 0.4s;
+      // animation-name: fadeInUp;
+      transition: all 1s;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: column;
+      color: $white;
+      .action-footer {
+        width: 100%;
+        font-size: 1.2rem;
+        border-top: 1px solid;
+        margin-top: 18px;
+        .action {
+          color: $white;
+        }
+      }
+    }
+    .hover-hide {
+      transition: all 1s;
+    }
+    &:hover,
+    &.active {
+      .card-body {
+
+      }
+      .content {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      .hover-hide {
+        opacity: .1;
+        background: #0b191c;
+      }
+    }
+  }
+}
+

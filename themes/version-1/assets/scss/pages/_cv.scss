@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@100&display=swap');
+
+
+body {
+  background: rgb(204,204,204);
+  font-family: 'Open Sans', sans-serif;
+}
+
+page[size="A4"] {
+  background: white;
+  min-width: 210mm;
+  max-width: 210mm;
+  // min-height: 297mm;
+  // max-height: 297mm;
+  min-height: 296mm;
+  max-height: 296mm;
+  display: flex;
+  margin: 0 auto;
+  // margin-bottom: 0.5cm;
+  // margin-top: 0.5cm;
+  // box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+// .print-btn {
+//   text-align: center;
+//   margin-top: 2rem;
+//   margin-bottom: 5rem;
+// }
+
+.cv-page-header {
+  width: 210mm;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: end;
+  .lang-switcher {
+    display: flex;
+    margin-right: 1rem;
+    .btn {
+      &.btn-en {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      &.btn-pt {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+
+
+}
+
+.cv {
+  position: relative;
+  padding: 6mm;
+  padding-bottom: 0;
+  p {
+    margin: 0;
+    // font-weight: 500;
+  }
+  .header {
+    background-color: #0C2D57;
+    position: absolute;
+    // left: 0;
+    // top: 0;
+    // width: 100%;
+
+    left: 3px;
+    top: 3px;
+    width: calc(100% - 6px);
+
+    z-index: 1;
+    height: 36mm;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    padding-left: 69mm;
+    display: flex;
+    align-items: center;
+    padding-top: 6mm;
+    .header-content {
+      padding: 0 5mm;
+    }
+    .name {
+      font-size: 37.5pt;
+      font-weight: 100;
+      line-height: 36.7pt;
+      text-align: center;
+      letter-spacing: 5px;
+    }
+  }
+  .left {
+    max-width: 63mm;
+    min-width: 63mm;
+    background-color: #1D406E;
+    z-index: 2;
+    padding: 5mm;
+    position: relative;
+    .section {
+      margin: 6mm 0;
+      text-align: right;
+      color: #fff;
+      &.main {
+        .content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          svg {
+            height: 17px;
+            width: 17px;
+            path {
+              fill: #fff;
+            }
+          }
+        }
+      }
+      p {
+        font-size: 10.5pt;
+        line-height: 18pt;
+        &.section-title {
+          font-size: 13.5pt;
+          line-height: 21pt;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 1mm;
+          margin-right: -1mm;
+          // &.section-title-pt {
+          //   letter-spacing: 1mm;
+          // }
+        }
+      }
+      .line {
+        width: 100%;
+        height: .2mm;
+        background-color: #fff;
+        margin: 2mm 0;
+      }
+      .options {
+        display: flex;
+        flex-wrap: wrap;
+        .option {
+          width: 50%;
+        }
+        &.edication {
+          .option {
+            width: 100%;
+            &:not(:last-child) {
+              margin-bottom: 2.5mm;
+            }
+            p {
+              line-height: normal;
+            }
+          }
+        }
+      }
+
+    }
+    .logo-container {
+      margin-top: 0;
+      padding: 0 7mm;
+    }
+  }
+  .right {
+    padding-top: 31mm;
+    padding-left: 5mm;
+    flex-grow: 1;
+    .title,
+    .sub-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 6px;
+    }
+    .title {
+      font-size: 22.5pt;
+      .line {
+        width: 50%;
+        height: 0.5mm;
+        background-color: #999999;
+        margin: 0 auto;
+        margin-bottom: 4mm;
+        margin-top: 2mm;
+      }
+    }
+    .sub-title {
+      font-size: 13.5pt;
+      background-color: #DDDDDD;
+      padding: 0.5mm 0;
+    }
+    .experience {
+      .option {
+        margin: 4mm 0;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .position-when {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          // line-height: 1;
+          .position {
+            font-size: 15pt;
+            font-weight: 700;
+          }
+          .when {
+            font-size: 11.2pt;
+            color: #777777;
+            font-weight: 600;
+          }
+        }
+        .company {
+          font-size: 12.7pt;
+          color: #777777;
+          font-weight: 600;
+          // line-height: 1;
+          .location {
+            font-size: 10pt;
+            // margin-left: 3px;
+          }
+        }
+        .tasks {
+          margin-top: 2mm;
+          .task {
+            font-size: 10.5pt;
+          }
+        }
+        .techs {
+          margin-top: 2mm;
+          .tech {
+            font-size: 10.5pt;
+            display: inline-block;
+            border: 1px solid #1e406e;
+            padding: 1px 5px;
+            margin-right: 2pt;
+            margin-bottom: 5pt;
+          }
+        }
+        .projects {
+          margin-top: 2mm;
+          .project {
+            display: inline-block;
+            font-size: 11.5pt;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media print {
+  // body, page[size="A4"] {
+  //   margin: 0;
+  //   box-shadow: 0;
+  // }
+  // .navbar,
+  // .cv-page-header {
+  //   visibility: hidden !important;
+  //   visibility: hidden;
+  //   height: 0 !important;
+  // }
+  // .cv {
+  //   margin: 0 !important;
+  //   .header {
+  //     background-color: #0C2D57 !important;
+  //   }
+  // }
+}
+
+body {
+  &.printing {
+    background-color: #fff !important;
+    .navbar,
+    .cv-page-header {
+      visibility: hidden !important;
+      display: none !important;;
+      height: 0 !important;
+    }
+    .cv {
+      margin: 0 !important;
+      .header {
+        background-color: #0C2D57 !important;
+      }
+    }
+  }
+}
+// @media print {
+//   // body * {
+//   //     visibility: hidden; // part to hide at the time of print
+//   //     -webkit-print-color-adjust: exact !important; // not necessary use
+//   //        if colors not visible
+//   // }
+
+//   // .navbar,
+//   // .cv-page-header {
+//   //     visibility: hidden !important;
+//   // }
+
+//   // #page-wrapper * {
+//   //     visibility: visible; // Print only required part
+//   //     text-align: left;
+//   //     -webkit-print-color-adjust: exact !important;
+//   // }
+// }

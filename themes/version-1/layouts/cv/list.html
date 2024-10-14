@@ -1,0 +1,38 @@
+{{ define "main" }}
+  {{ $currentLang := .Site.Language.Lang}}
+  <!-- <div class="container">
+    <div class="cv-page-header">
+      <div class="lang-switcher">
+        {{ range .AllTranslations }}
+          {{ $lang := .Language.Lang}}
+          <a class="btn {{ if eq $lang $currentLang }}btn-primary{{ else }}btn-outline-primary{{ end }} btn-{{$lang}} text-uppercase"
+            href="{{ .Permalink }}">
+            {{$lang}}
+          </a>
+        {{ end }}
+      </div>
+      <div class="print-btn">
+        <button type="button" class="btn btn-primary" onclick="printCv('{{$currentLang}}')">Print</button>
+      </div>
+    </div>
+
+    {{- partial "shared/cv/a4/cv-a4.html" (dict "lang" $currentLang) -}}
+  </div> -->
+
+  <div class="cv-page-header">
+    <div class="lang-switcher">
+      {{ range .AllTranslations }}
+        {{ $lang := .Language.Lang}}
+        <a class="btn {{ if eq $lang $currentLang }}btn-primary{{ else }}btn-outline-primary{{ end }} btn-{{$lang}} text-uppercase"
+          href="{{ .Permalink }}">
+          {{$lang}}
+        </a>
+      {{ end }}
+    </div>
+    <div class="print-btn">
+      <button type="button" class="btn btn-primary" onclick="printCv('{{$currentLang}}')">Print</button>
+    </div>
+  </div>
+
+  {{- partial "shared/cv/a4/cv-a4.html" (dict "lang" $currentLang) -}}
+{{ end }}

@@ -1,0 +1,319 @@
+<div class="dashboard-1 pb-5">
+  <div class="background-image" style="background-image: url('/images/vastari/background-images/dashboard-exhibition-producer.jpg')"></div>
+  <div class="container-fluid p-0">
+    <div class="row header">
+      {{/*  <div class="col-12">
+        <div id="carouselExampleControls" class="carousel slide text-center" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="background-image" style="background-image: url('/images/vastari/background-images/dashboard-collector.jpg')"></div>
+              <div class="content container">
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <h1 class="mb-4 display-5">Welcome back Vastari</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="background-image" style="background-image: url('/images/vastari/background-images/dashboard-exhibition-producer.jpg')"></div>
+              <div class="content container text-white">
+                <div class="row justify-content-center">
+                  <div class="col-8">
+                    <h1 class="mb-4">Some other title</h1>
+                    <p class="mb-4">Vastari logos here, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex animi sequi quibusdam iure repudiandae repellat eveniet deleniti assumenda cum excepturi expedita commodi ad et similique possimus, nostrum facilis eum dolorem.</h1>
+                    <div class="product-images">
+                      <img src='/images/logos/css.png' class="img-fluid">
+                      <img src='/images/logos/html.png' class="img-fluid">
+                      <img src='/images/logos/js.png' class="img-fluid">
+                      <img src='/images/logos/m.png' class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="background-image" style="background-image: url('/images/vastari/background-images/dashboard-museum.jpg')"></div>
+              <div class="content container">
+                <div class="row justify-content-center">
+                  <div class="col-8">
+                    <h1 class="mb-4">Some other title</h1>
+                    <p class="mb-4">Vastari logos here, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex animi sequi quibusdam iure repudiandae repellat eveniet deleniti assumenda cum excepturi expedita commodi ad et similique possimus, nostrum facilis eum dolorem.</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>  */}}
+      <div class="col-12">
+        <div class="container">
+          <div class="row justify-content-center text-center mt-5">
+            <div class="col-12">
+              <h1 class="mb-4 display-5">Welcome back Vastari</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-12 col-lg-6">
+              <h5 class="mb-4">Find something amazing today</h5>
+              <div class="input-group mb-5">
+                <input type="search" class="form-control text-center" placeholder="What are you looking for today" aria-label="Username" aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="white-transparent-wrapper">
+                <div class="row">
+                  <div class="col-12">
+                    <h4 class="mb-4 text-center">Objects for you</h4>
+                  </div>
+                  {{ with site.Data.exhibitions }}
+                    {{ range .items }}
+                      <div class="col-6 mb-3">
+                        {{- partial "shared/cards/exhibitions/effect-7.html" . -}}
+                      </div>
+                    {{ end }}
+                  {{ end }}
+                  <div class="col-6"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="white-transparent-wrapper">
+                <div class="row">
+                  <div class="col-12">
+                    <h4 class="mb-4 text-center">Exhibitions for you</h4>
+                  </div>
+                  {{ with site.Data.exhibitions }}
+                    {{ range .items }}
+                      <div class="col-6 mb-3">
+                        {{- partial "shared/cards/exhibitions/effect-7.html" . -}}
+                      </div>
+                    {{ end }}
+                  {{ end }}
+                  <div class="col-6"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="white-transparent-wrapper">
+                <div class="row">
+                  <div class="col-12">
+                    <h4 class="mb-4 text-center">Latest exhibitions requests</h4>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Accordion Item #1
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Accordion Item #1
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="white-transparent-wrapper">
+                <div class="row">
+                  <div class="col-12">
+                    <h4 class="mb-4 text-center">Latest objects requests</h4>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Accordion Item #1
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Accordion Item #1
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="white-transparent-wrapper px-0">
+                <h4 class="mb-4 text-center">Upcoming webinars</h4>
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+                  <div class="carousel-inner">
+                    <div class="row justify-content-center">
+                      <div class="col-8">
+                        {{ with site.Data.exhibitions }}
+                          {{ range $index, $item := .items }}
+                            <div class="carousel-item {{if eq $index 0}}active{{end}}">
+                              {{ with $item }}
+                                {{- partial "shared/cards/exhibitions/effect-7.html" . -}}
+                              {{ end }}
+                            </div>
+                          {{ end }}
+                        {{ end }}
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="white-transparent-wrapper px-0">
+                <h4 class="mb-4 text-center">Recent webinars</h4>
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+                  <div class="carousel-inner">
+                    <div class="row justify-content-center">
+                      <div class="col-8">
+                        {{ with site.Data.exhibitions }}
+                          {{ range $index, $item := .items }}
+                            <div class="carousel-item {{if eq $index 0}}active{{end}}">
+                              {{ with $item }}
+                                {{- partial "shared/cards/exhibitions/effect-7.html" . -}}
+                              {{ end }}
+                            </div>
+                          {{ end }}
+                        {{ end }}
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="white-transparent-wrapper px-0">
+                <h4 class="mb-4 text-center">Recent blog posts</h4>
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+                  <div class="carousel-inner">
+                    <div class="row justify-content-center">
+                      <div class="col-8">
+                        {{ with site.Data.exhibitions }}
+                          {{ range $index, $item := .items }}
+                            <div class="carousel-item {{if eq $index 0}}active{{end}}">
+                              {{ with $item }}
+                                {{- partial "shared/cards/exhibitions/effect-7.html" . -}}
+                              {{ end }}
+                            </div>
+                          {{ end }}
+                        {{ end }}
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            {{/*  <div class="col-8">
+              <div class="row">
+                <div class="col-4">
+                  <div class="card card-products-preview">
+                    <h5 class="card-title">
+                      Exhibitions for you
+                    </h5>
+                    <div class="card-body">
+                      <div class="row">
+                        {{ with site.Data.exhibitions }}
+                          {{ range .items }}
+                            <div class="col-6 products-img-wrap">
+                              {{- partial "shared/cards/exhibitions/content/image.html" . -}}
+                              {{- partial "shared/cards/exhibitions/effect-7.html" . -}}
+                              <p class="title text-truncate mb-0">{{.title}}</p>
+                            </div>
+                          {{ end }}
+                        {{ end }}
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>  */}}
+            <div class="col-4">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .white-transparent-wrapper {
+    background-color: #ffffff61;
+    padding: 1rem;
+    border-radius: .25rem;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+  }
+</style>

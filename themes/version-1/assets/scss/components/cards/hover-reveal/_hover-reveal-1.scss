@@ -1,0 +1,47 @@
+.card {
+  &.hover-reveal-1 {
+    transition: 0.4s ease-out;
+    box-shadow: 2px 2px 4px 0 rgba(40, 40, 40, .15);
+    &:hover {
+      transform: translateY(-5px);
+      .hover-hide {
+        opacity: .5;
+      }
+      .hover-show {
+        transform: translateY(0px);
+        opacity: 1;
+        top: 0;
+        height: 100%;
+      }
+    }
+
+    .card-body {
+      padding: 0;
+      color: $dark;
+      text-decoration: none;
+      position: relative;
+    }
+    .hover-show,
+    .hover-hide,
+    .content {
+      padding: 10px;
+    }
+    .hover-show {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+      color: white;
+      opacity: 0;
+      transform: translateY(30px);
+      background: rgba(black, 0.6);
+      transition: 0.5s;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}

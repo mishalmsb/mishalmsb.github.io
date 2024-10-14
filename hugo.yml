@@ -1,0 +1,42 @@
+baseURL: https://mishalmsb.github.io/
+languageCode: en-us
+title: Mishal | Front-end web developer
+description: Mishal | Front-end web developer
+theme: version-1
+defaultContentLang: en
+security:
+  enableInlineShortcodes: true
+languages:
+  en:
+    contentDir: content/en
+    languageName: English
+    weight: 1
+  pt:
+    contentDir: content/pt
+    languageName: Portuguese
+    weight: 2
+params:
+  inConstruction: true
+  preloader:
+    enable: true
+    preloader: images/preloader.gif
+  internalPlugins:
+    css: []
+    js: []
+    # - link: js/helpers.js
+    # - link: js/text-rotate.js
+    # - link: js/text-rotate.js
+    # - link: js/cv.js
+  devPlugins:
+    internalPlugins:
+      css: []
+      js: []
+      # - link: js/particles.js
+    externalPlugins:
+      css: []
+      js: []
+      # - link: plugins/particles/particles.min.js
+  externalPlugins:
+    css: []
+    js:
+    - link: plugins/bootstrap-5.1.0/js/bootstrap.min.js

@@ -1,0 +1,44 @@
+.main {
+  width: 66.6666666667%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 48px) ;
+  > section {
+    // position: absolute;
+    // width: calc(50% - 24px);
+    // height: calc(50% - 36px);
+    transition: all 0.5s ease-in-out;
+    background: $intro-section-bg;
+    @include flex-center();
+    @include uppercase();
+
+    // &:nth-child(1),
+    // &:nth-child(2) {
+    //   top: 24px;
+    // }
+
+    height: 33.3333333333% !important;
+
+    &:nth-child(2) {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    // &:nth-child(3),
+    // &:nth-child(4) {
+    //   top: calc(50% + 12px);
+    // }
+
+    // &:nth-child(3) {
+    //   left: 0;
+    // }
+
+    // &:nth-child(4) {
+    //   left: 50%;
+    // }
+  }
+}
+
+

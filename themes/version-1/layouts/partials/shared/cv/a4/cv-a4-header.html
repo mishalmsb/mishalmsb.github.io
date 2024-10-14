@@ -1,0 +1,10 @@
+{{ $lang := .lang }}
+{{ $context := .context }}
+
+{{ with $context }}
+  <div class="header">
+    <div class="header-content">
+      <p class="name">{{.name}}</p>
+    </div>
+  </div>
+{{ end }}

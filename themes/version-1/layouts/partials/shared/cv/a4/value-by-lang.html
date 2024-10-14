@@ -1,0 +1,11 @@
+{{ $lang := .lang }}
+{{ $context := .context }}
+{{ $langScratch := newScratch }}
+
+{{ if and (eq $lang "en") $context.en }}
+  {{ $langScratch.Set "lang" $context.en }}
+{{ else if and (eq $lang "pt") $context.pt }}
+  {{ $langScratch.Set "lang" $context.pt }}
+{{ end }}
+
+{{ return $langScratch.Get "lang" }}

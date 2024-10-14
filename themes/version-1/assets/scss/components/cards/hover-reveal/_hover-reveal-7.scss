@@ -1,0 +1,35 @@
+.card {
+  &.hover-reveal-7 {
+    overflow: hidden;
+    // height: calc(100% + 42px);
+    // height: 100%;
+    .card-body {
+      padding: 0;
+      position: relative;
+    }
+    .card-content {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      transform: translateY(55px);
+      transition: all 0.3s;
+      background-color: $white;
+      padding: 0;
+      opacity: 0;
+      padding: 10px;
+      .content {
+        padding: 10px;
+      }
+    }
+    .card-title {
+      padding: 10px;
+    }
+    &:hover,
+    &.active {
+      .card-content {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+}

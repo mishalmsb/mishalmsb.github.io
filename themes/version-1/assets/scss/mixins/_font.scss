@@ -1,0 +1,8 @@
+// @mixin font-size($value) {
+//   @include rfs($value);
+// }
+
+
+@mixin uppercase() {
+  text-transform: uppercase;
+}

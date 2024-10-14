@@ -1,0 +1,25 @@
+<div class="card hover-reveal-3">
+  <a class="card-img-top position-relative" href="#">
+    {{- partial "shared/cards/exhibitions/content/image.html" . -}}
+    <div class="card-body" href="#">
+      {{- partial "shared/cards/exhibitions/content/image.html" . -}}
+      <div class="content">
+        <h5>{{.title}}</h5>
+        <div>
+          <i class="fas fa-money-check-alt"></i>
+          {{.hiringFee}}
+        </div>
+        <div>
+          <i class="fas fa-arrows-alt mr-1"></i>
+          {{.spaceRequirement}}
+        </div>
+      </div>
+    </div>
+  </a>
+  <div class="card-footer hover-hide">
+    <p class="fw-bold text-truncate m-0">{{.title}}</p>
+  </div>
+  <div class="card-footer action-footer hover-show">
+    {{- partial "shared/cards/exhibitions/content/actions.html" . -}}
+  </div>
+</div>
