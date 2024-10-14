@@ -38,5 +38,5 @@ params:
       # - link: plugins/particles/particles.min.js
   externalPlugins:
     css: []
-    js:
-    - link: plugins/bootstrap-5.1.0/js/bootstrap.min.js
+    js: []
+    # - link: plugins/bootstrap-5.1.0/js/bootstrap.min.js
