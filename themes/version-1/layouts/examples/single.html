@@ -1,0 +1,4 @@
+{{ $current := . }}
+{{ $location := $current.Params.location}}
+
+{{ .Render $location }}

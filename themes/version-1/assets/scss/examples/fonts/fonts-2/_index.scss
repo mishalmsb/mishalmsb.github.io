@@ -1,0 +1,68 @@
+@import './fonts';
+
+// $font-url: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' !default;
+// @import url('#{$font-url}');
+
+$font-family-sans-serif: 'HelveticaNewghd', 'Helvetica Neue', 'Open Sans', -apple-system, 'Roboto', arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+
+$helveticaNewFallBack: $helveticaNew, system-ui;
+
+:root {
+  --cx-body-line-height: 1.6;
+  --cx-body-font-family: #{$font-family-sans-serif};
+}
+
+.HelveticaNew {
+  font-family: $helveticaNew;
+}
+
+.HelveticaNew-300 {
+  font-family: $helveticaNewFallBack;
+  font-weight: 300;
+}
+
+.HelveticaNew-normal {
+  font-family: $helveticaNewFallBack;
+  font-weight: normal;
+}
+
+.HelveticaNew-500 {
+  font-family: $helveticaNewFallBack;
+  font-weight: 500;
+}
+
+.HelveticaNew-bold {
+  font-family: $helveticaNewFallBack;
+  font-weight: bold;
+}
+
+.Helvetica-Neue {
+  font-family: 'Helvetica-Neue';
+}
+
+.Open-Sans {
+  font-family: 'Open Sans';
+}
+
+.-apple-system {
+  font-family: -apple-system;
+}
+
+body {
+  font-family: var(--cx-body-font-family);
+  font-size: var(--cx-body-font-size);
+  font-weight: var(--cx-body-font-weight);
+  line-height: var(--cx-body-line-height);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.block {
+  display: block;
+}

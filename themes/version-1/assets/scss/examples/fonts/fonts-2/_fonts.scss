@@ -1,0 +1,85 @@
+$font-src-path: '/fonts/text' !default;
+$avantgarde: 'ITCAvantGardePro-Bold' !default;
+$avantgarde-font-filename: 'ITCAvantGardePro-Bold' !default;
+
+$helveticaNew-UltraLightplus: 'HelveticaNew-UltraLightplus' !default;
+$helveticaNew-UltraLightplus-font-filename: 'HelveticaNew-UltraLightplus' !default;
+$helveticaNew-UltraLightghd: 'HelveticaNew-UltraLightghd' !default;
+$helveticaNew-UltraLightghd-font-filename: 'HelveticaNew-UltraLightghd' !default;
+$helveticaNew-Mediumghd-font-filename: 'HelveticaNew-Mediumghd' !default;
+$helveticaNew-Lightghd-font-filename: 'HelveticaNew-Lightghd' !default;
+$helveticaNewghd-font-filename: 'HelveticaNewghd';
+$helveticaNew-Boldghd-font-filename: 'HelveticaNew-Boldghd' !default;
+
+$helveticaNew: 'HelveticaNew' !default;
+
+$summerFestival-font-filename: 'SummerFestival-Regular';
+$summerFestival-font-family: 'SummerFestival';
+
+@font-face {
+  font-display: swap;
+  font-family: '#{$avantgarde}';
+  src:
+    url('#{$font-src-path}/#{$avantgarde-font-filename}.woff2') format('woff2'),
+    url('#{$font-src-path}/#{$avantgarde-font-filename}.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: '#{$helveticaNew-UltraLightplus}';
+  src:
+    url('#{$font-src-path}/#{$helveticaNew-UltraLightplus-font-filename}.woff2') format('woff2'),
+    url('#{$font-src-path}/#{$helveticaNew-UltraLightplus-font-filename}.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: '#{$helveticaNew-UltraLightghd}';
+  src:
+    url('#{$font-src-path}/#{$helveticaNew-UltraLightghd-font-filename}.woff2') format('woff2'),
+    url('#{$font-src-path}/#{$helveticaNew-UltraLightghd-font-filename}.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: '#{$helveticaNew}';
+  font-weight: 300;
+  src:
+    url('#{$font-src-path}/#{$helveticaNew-Lightghd-font-filename}.woff2') format('woff2'),
+    url('#{$font-src-path}/#{$helveticaNew-Lightghd-font-filename}.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: '#{$helveticaNew}';
+  font-weight: normal;
+  src:
+    url('#{$font-src-path}/#{$helveticaNewghd-font-filename}.woff2') format('woff2'),
+    url('#{$font-src-path}/#{$helveticaNewghd-font-filename}.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: '#{$helveticaNew}';
+  font-weight: 500;
+  src:
+    url('#{$font-src-path}/#{$helveticaNew-Mediumghd-font-filename}.woff2') format('woff2'),
+    url('#{$font-src-path}/#{$helveticaNew-Mediumghd-font-filename}.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: '#{$helveticaNew}';
+  font-weight: bold;
+  src:
+    url('#{$font-src-path}/#{$helveticaNew-Boldghd-font-filename}.woff2') format('woff2'),
+    url('#{$font-src-path}/#{$helveticaNew-Boldghd-font-filename}.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: '#{$summerFestival-font-family}';
+  font-weight: 400;
+  src:
+    url('#{$font-src-path}/#{$summerFestival-font-filename}.ttf') format('truetype');
+}
