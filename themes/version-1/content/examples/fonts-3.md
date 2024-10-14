@@ -1,9 +1,9 @@
 ---
 title: "Mishal | Front-end web developer"
-description: 'Default'
+description: 'Local Mac'
 draft: false
-location: 'fonts/fonts-1'
-scssPath: scss/examples/fonts/fonts-1/_index.scss
+location: 'fonts/fonts-3'
+scssPath: scss/examples/fonts/fonts-3/_index.scss
 items:
   - class: 'HelveticaNew'
   - class: 'HelveticaNew-300'

@@ -1,8 +1,9 @@
 ---
 title: "Mishal | Front-end web developer"
-description: 'Hello'
+description: 'Using fallback and not local'
 draft: false
 location: 'fonts/fonts-2'
+scssPath: scss/examples/fonts/fonts-2/_index.scss
 items:
   - class: 'HelveticaNew'
   - class: 'HelveticaNew-300'

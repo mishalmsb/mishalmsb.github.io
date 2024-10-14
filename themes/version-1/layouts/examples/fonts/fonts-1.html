@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="{{ $styles.Permalink }}" />
 </head>
 <body>
-  <h1>Default</h1>
+  <h1>{{ $current.Params.description }}</h1>
   {{ $items := $current.Params.items }}
   {{ range $items }}
     <p class="{{.class}}">

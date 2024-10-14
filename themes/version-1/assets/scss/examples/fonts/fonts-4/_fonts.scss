@@ -20,6 +20,7 @@ $summerFestival-font-family: 'SummerFestival';
 //   font-display: swap;
 //   font-family: '#{$avantgarde}';
 //   src:
+//     local('Open Sans, sans-serif'),
 //     url('#{$font-src-path}/#{$avantgarde-font-filename}.woff2') format('woff2'),
 //     url('#{$font-src-path}/#{$avantgarde-font-filename}.woff') format('woff');
 // }
@@ -28,6 +29,7 @@ $summerFestival-font-family: 'SummerFestival';
 //   font-display: swap;
 //   font-family: '#{$helveticaNew-UltraLightplus}';
 //   src:
+//     local('Open Sans, sans-serif'),
 //     url('#{$font-src-path}/#{$helveticaNew-UltraLightplus-font-filename}.woff2') format('woff2'),
 //     url('#{$font-src-path}/#{$helveticaNew-UltraLightplus-font-filename}.woff') format('woff');
 // }
@@ -36,6 +38,7 @@ $summerFestival-font-family: 'SummerFestival';
 //   font-display: swap;
 //   font-family: '#{$helveticaNew-UltraLightghd}';
 //   src:
+//     local('Open Sans, sans-serif'),
 //     url('#{$font-src-path}/#{$helveticaNew-UltraLightghd-font-filename}.woff2') format('woff2'),
 //     url('#{$font-src-path}/#{$helveticaNew-UltraLightghd-font-filename}.woff') format('woff');
 // }
@@ -45,6 +48,7 @@ $summerFestival-font-family: 'SummerFestival';
   font-family: '#{$helveticaNew}';
   font-weight: 300;
   src:
+    local('Open Sans, sans-serif'),
     url('#{$font-src-path}/#{$helveticaNew-Lightghd-font-filename}.woff2') format('woff2'),
     url('#{$font-src-path}/#{$helveticaNew-Lightghd-font-filename}.woff') format('woff');
 }
@@ -54,6 +58,7 @@ $summerFestival-font-family: 'SummerFestival';
   font-family: '#{$helveticaNew}';
   font-weight: normal;
   src:
+    local('Open Sans, sans-serif'),
     url('#{$font-src-path}/#{$helveticaNewghd-font-filename}.woff2') format('woff2'),
     url('#{$font-src-path}/#{$helveticaNewghd-font-filename}.woff') format('woff');
 }
@@ -63,6 +68,7 @@ $summerFestival-font-family: 'SummerFestival';
   font-family: '#{$helveticaNew}';
   font-weight: 500;
   src:
+    local('Open Sans, sans-serif'),
     url('#{$font-src-path}/#{$helveticaNew-Mediumghd-font-filename}.woff2') format('woff2'),
     url('#{$font-src-path}/#{$helveticaNew-Mediumghd-font-filename}.woff') format('woff');
 }
@@ -72,6 +78,7 @@ $summerFestival-font-family: 'SummerFestival';
   font-family: '#{$helveticaNew}';
   font-weight: bold;
   src:
+    local('Open Sans, sans-serif'),
     url('#{$font-src-path}/#{$helveticaNew-Boldghd-font-filename}.woff2') format('woff2'),
     url('#{$font-src-path}/#{$helveticaNew-Boldghd-font-filename}.woff') format('woff');
 }
@@ -81,5 +88,6 @@ $summerFestival-font-family: 'SummerFestival';
 //   font-family: '#{$summerFestival-font-family}';
 //   font-weight: 400;
 //   src:
+//     local('Open Sans, sans-serif'),
 //     url('#{$font-src-path}/#{$summerFestival-font-filename}.ttf') format('truetype');
 // }
