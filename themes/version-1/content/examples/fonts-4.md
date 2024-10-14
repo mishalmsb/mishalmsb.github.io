@@ -1,6 +1,6 @@
 ---
 title: "Mishal | Front-end web developer"
-description: 'Local Windowsish'
+description: 'Local Mac'
 draft: false
 location: 'fonts/fonts-4'
 scssPath: scss/examples/fonts/fonts-4/_index.scss

@@ -1,6 +1,6 @@
 ---
 title: "Mishal | Front-end web developer"
-description: 'Local Mac'
+description: 'Using fallback and not local'
 draft: false
 location: 'fonts/fonts-3'
 scssPath: scss/examples/fonts/fonts-3/_index.scss

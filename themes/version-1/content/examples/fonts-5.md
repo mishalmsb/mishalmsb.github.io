@@ -1,6 +1,6 @@
 ---
 title: "Mishal | Front-end web developer"
-description: 'Using woff2 only'
+description: 'Local Windowsish'
 draft: false
 location: 'fonts/fonts-5'
 scssPath: scss/examples/fonts/fonts-5/_index.scss

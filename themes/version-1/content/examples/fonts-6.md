@@ -1,9 +1,9 @@
 ---
 title: "Mishal | Front-end web developer"
-description: 'Default'
+description: 'Using woff2 only'
 draft: false
-location: 'fonts/fonts-2'
-scssPath: scss/examples/fonts/fonts-2/_index.scss
+location: 'fonts/fonts-6'
+scssPath: scss/examples/fonts/fonts-6/_index.scss
 items:
   - class: 'HelveticaNew'
   - class: 'HelveticaNew-300'

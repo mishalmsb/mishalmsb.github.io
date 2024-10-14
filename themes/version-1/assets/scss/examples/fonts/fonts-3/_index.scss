@@ -6,6 +6,8 @@
 $font-family-sans-serif: 'HelveticaNewghd', 'Helvetica Neue', 'Open Sans', -apple-system, 'Roboto', arial, sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol';
 
+$helveticaNewFallBack: $helveticaNew, system-ui;
+
 :root {
   --cx-body-line-height: 1.6;
   --cx-body-font-family: #{$font-family-sans-serif};
@@ -16,22 +18,22 @@ $font-family-sans-serif: 'HelveticaNewghd', 'Helvetica Neue', 'Open Sans', -appl
 }
 
 .HelveticaNew-300 {
-  font-family: $helveticaNew;
+  font-family: $helveticaNewFallBack;
   font-weight: 300;
 }
 
 .HelveticaNew-normal {
-  font-family: $helveticaNew;
+  font-family: $helveticaNewFallBack;
   font-weight: normal;
 }
 
 .HelveticaNew-500 {
-  font-family: $helveticaNew;
+  font-family: $helveticaNewFallBack;
   font-weight: 500;
 }
 
 .HelveticaNew-bold {
-  font-family: $helveticaNew;
+  font-family: $helveticaNewFallBack;
   font-weight: bold;
 }
 
@@ -46,7 +48,6 @@ $font-family-sans-serif: 'HelveticaNewghd', 'Helvetica Neue', 'Open Sans', -appl
 .-apple-system {
   font-family: -apple-system;
 }
-
 
 body {
   font-family: var(--cx-body-font-family);

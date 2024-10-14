@@ -48,9 +48,7 @@ $summerFestival-font-family: 'SummerFestival';
   font-family: '#{$helveticaNew}';
   font-weight: 300;
   src:
-    local('system-ui'),
     url('#{$font-src-path}/#{$helveticaNew-Lightghd-font-filename}.woff2') format('woff2'),
-    url('#{$font-src-path}/#{$helveticaNew-Lightghd-font-filename}.woff') format('woff');
 }
 
 @font-face {
@@ -58,9 +56,7 @@ $summerFestival-font-family: 'SummerFestival';
   font-family: '#{$helveticaNew}';
   font-weight: normal;
   src:
-    local('system-ui'),
     url('#{$font-src-path}/#{$helveticaNewghd-font-filename}.woff2') format('woff2'),
-    url('#{$font-src-path}/#{$helveticaNewghd-font-filename}.woff') format('woff');
 }
 
 @font-face {
@@ -68,9 +64,7 @@ $summerFestival-font-family: 'SummerFestival';
   font-family: '#{$helveticaNew}';
   font-weight: 500;
   src:
-    local('system-ui'),
     url('#{$font-src-path}/#{$helveticaNew-Mediumghd-font-filename}.woff2') format('woff2'),
-    url('#{$font-src-path}/#{$helveticaNew-Mediumghd-font-filename}.woff') format('woff');
 }
 
 @font-face {
@@ -78,9 +72,7 @@ $summerFestival-font-family: 'SummerFestival';
   font-family: '#{$helveticaNew}';
   font-weight: bold;
   src:
-    local('system-ui'),
     url('#{$font-src-path}/#{$helveticaNew-Boldghd-font-filename}.woff2') format('woff2'),
-    url('#{$font-src-path}/#{$helveticaNew-Boldghd-font-filename}.woff') format('woff');
 }
 
 // @font-face {
