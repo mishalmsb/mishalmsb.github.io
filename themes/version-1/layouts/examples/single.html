@@ -2,12 +2,38 @@
 {{ $scssPath := $current.Params.scssPath}}
 {{ $location := $current.Params.location}}
 
+{{ $stylesNav := resources.Get "scss/examples/nav.scss" | css.Sass (dict "outputStyle" "compressed") | fingerprint }}
 {{ $styles := resources.Get $scssPath | css.Sass (dict "outputStyle" "compressed") | fingerprint }}
 
 <head>
+  <link rel="stylesheet" href="{{ $stylesNav.Permalink }}" />
   <link rel="stylesheet" href="{{ $styles.Permalink }}" />
 </head>
 <body>
+
+	{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+  <nav class="navbar-example">
+    <ul class="navbar-menu">
+    {{ range $pages }}
+      {{ $page := . }}
+      {{ if and $page.Permalink }}  
+        <li>
+          <a href="{{$page.Permalink}}" class="{{ if eq $page.Permalink $current.Permalink }}active{{ end }}">
+            {{ if $page.Params.sortDescription }}
+              {{ $page.Params.sortDescription }}
+            {{ else }}
+              {{ $page.Description }}
+            {{ end }}
+          </a>
+        </li>
+      {{ end }}
+    {{end}}
+    </ul>
+  </nav>
+   
+   <h1>
+    
+   </h1>
   <h1>{{ $current.Params.description }}</h1>
   {{ $items := $current.Params.items }}
   {{ range $items }}
@@ -18,7 +44,7 @@
   {{ end }}
 
 
-  {{ if eq $location "fonts/fonts-5" }}
+  {{ if eq $location "fonts/fonts-6" }}
     <h1>woff + woff2</h1>
     <code>
       @font-face{font-display:swap;font-family:"HelveticaNew";font-weight:300;src:local("Open Sans, sans-serif"),url("/fonts/text/HelveticaNew-Lightghd.woff2") format("woff2"),url("/fonts/text/HelveticaNew-Lightghd.woff") format("woff")}@font-face{font-display:swap;font-family:"HelveticaNew";font-weight:normal;src:local("Open Sans, sans-serif"),url("/fonts/text/HelveticaNewghd.woff2") format("woff2"),url("/fonts/text/HelveticaNewghd.woff") format("woff")}@font-face{font-display:swap;font-family:"HelveticaNew";font-weight:500;src:local("Open Sans, sans-serif"),url("/fonts/text/HelveticaNew-Mediumghd.woff2") format("woff2"),url("/fonts/text/HelveticaNew-Mediumghd.woff") format("woff")}@font-face{font-display:swap;font-family:"HelveticaNew";font-weight:bold;src:local("Open Sans, sans-serif"),url("/fonts/text/HelveticaNew-Boldghd.woff2") format("woff2"),url("/fonts/text/HelveticaNew-Boldghd.woff") format("woff")}:root{--cx-body-line-height: 1.6;--cx-body-font-family: HelveticaNewghd,Helvetica Neue,Open Sans,-apple-system,Roboto,arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.HelveticaNew{font-family:"HelveticaNew"}.HelveticaNew-300{font-family:"HelveticaNew";font-weight:300}.HelveticaNew-normal{font-family:"HelveticaNew";font-weight:normal}.HelveticaNew-500{font-family:"HelveticaNew";font-weight:500}.HelveticaNew-bold{font-family:"HelveticaNew";font-weight:bold}.Helvetica-Neue{font-family:'Helvetica-Neue'}.Open-Sans{font-family:'Open Sans'}.-apple-system{font-family:-apple-system}body{font-family:var(--cx-body-font-family);font-size:var(--cx-body-font-size);font-weight:var(--cx-body-font-weight);line-height:var(--cx-body-line-height);max-width:1200px;margin:0 auto;padding:100px}.underline{text-decoration:underline}.block{display:block}
@@ -32,6 +58,4 @@
       <a href="https://caniuse.com/?search=woff" target="_blank">woff</a> vs <a href="https://caniuse.com/?search=woff2" target="_blank">woff2</a>
     </h1>
   {{ end }}
-
-  
 </body>

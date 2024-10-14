@@ -1,6 +1,7 @@
 ---
 title: "Mishal | Front-end web developer"
 description: 'Default'
+sortDescription: 'Default'
 draft: false
 location: 'fonts/fonts-1'
 scssPath: scss/examples/fonts/fonts-1/_index.scss

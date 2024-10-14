@@ -1,6 +1,7 @@
 ---
 title: "Mishal | Front-end web developer"
 description: 'Using woff2 only'
+sortDescription: 'woff2'
 draft: false
 location: 'fonts/fonts-6'
 scssPath: scss/examples/fonts/fonts-6/_index.scss

@@ -1,6 +1,7 @@
 ---
 title: "Mishal | Front-end web developer"
 description: 'Using fallback and not local'
+sortDescription: 'Fallback'
 draft: false
 location: 'fonts/fonts-3'
 scssPath: scss/examples/fonts/fonts-3/_index.scss

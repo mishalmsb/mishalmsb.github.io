@@ -6,3 +6,7 @@
     {{ .Content }}
   </article>
 {{ end }} -->
+
+{{ range .Pages }}
+<h2>{{.}}</h2>
+{{ end }}

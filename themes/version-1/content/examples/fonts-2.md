@@ -1,6 +1,7 @@
 ---
 title: "Mishal | Front-end web developer"
-description: 'Default'
+description: 'Using Open Sans Instead of Arial'
+sortDescription: 'Open Sans'
 draft: false
 location: 'fonts/fonts-2'
 scssPath: scss/examples/fonts/fonts-2/_index.scss

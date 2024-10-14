@@ -70,8 +70,8 @@ $summerFestival-font-family: 'SummerFestival';
   font-family: '#{$helveticaNew}';
   font-weight: 500;
   src:
-    local('Arial'),
-    local('Sans Serif'),
+    local('Open Sans'),
+    local('sans-serif'),
     url('#{$font-src-path}/#{$helveticaNew-Mediumghd-font-filename}.woff2') format('woff2'),
     url('#{$font-src-path}/#{$helveticaNew-Mediumghd-font-filename}.woff') format('woff');
 }
