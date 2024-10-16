@@ -3,6 +3,9 @@ nav.navbar-example {
   ul.navbar-menu {
     padding: 0;
     margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 
     li {
       display: inline-block;
